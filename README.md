@@ -1,6 +1,108 @@
 #Draft
 
 
+
+
+
+# References (Alphabetic order)
+
+
+
+## Tables - AKA Arrays/Objects
+The 'table' allows storing a collection of data under a single variable.
+
+```
+Note: The `table` object in other langauges woud be reffered as array/object
+```
+
+## Constructor 
+`{}`
+Creates a new `table` object(?).
+
+## Properties
+
+## Methods
+[Types](#types)
+[`table.insert()`](#table.insert)
+Adds one or more elements to the table.
+
+[`table.remove()`](#table.remove)
+Removed one or more elements from the table.
+
+[`table.concat()`](#table.concat)
+Returns a new table that is the calling table with other table(s).
+
+[`table.unpack()`](#table.unpack)
+Unpacks a table into values.
+
+
+================================
+ 
+# <a name="table.insert">Table.insert()</a>
+The `table.insert()` method adds one element to the end/start(?) of the table.
+
+## Syntax
+```lua
+    table.insert(yourTable, value)
+```
+
+## Examples
+
+### Adding elements to table
+
+```lua
+
+    groceries = { "Bread", "Rice"}
+    table.insert(groceries, "Potatoes")
+
+   -- Result:  {"Bread", "Rice", "Potattoes}
+
+```
+
+# <a name="table.remove">Table.remove()</a>
+
+# <a name="table.concat">Table.concat()</a>
+
+# <a name="table.unpack">Table.unpack()</a>
+
+
+
+
+
+
+
+
+
+# Other
+## class
+## function
+## const
+
+## for ... do
+## whilte ... do
+## pairs
+## ipairs
+## next
+## rawset
+## count
+
+## return
+
+
+
+
+
+
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+<!-- Docs to look at: React, Laravel, JS MDN -->
+
 Use real life examples, not some foo bar, a, e, i... 
 
 
@@ -128,22 +230,6 @@ lunavel.com
 Lunavel, the unofficial documentation you were looking for Luna!
 Get started
 
-# Getting Started
-
-What is Luna
-
-
-
-# The Basics
-
-## Tables - AKA Arrays/Objects
-Unlike other languages such as JavaScript, Luna calls objects/arrays "tables". Which serve as an array and object.
-
-<!-- http://lua-users.org/wiki/TablesTutorial -->
-<!-- https://developer.roblox.com/en-us/articles/Metatables -->
-<!-- https://www.lua.org/pil/19.2.html -->
-## Creating Table
-{}
 
 Asigning Values
 
@@ -151,12 +237,9 @@ Reading values
 
 Good/Bad pratcie
 
-## Getting all data from table and displaying it
 Creating your own functions 
 
-table.unpack()
-table.remove()
-table.add()
+
 
 
 
@@ -176,6 +259,7 @@ table
 utf8
 bit32
 
+
 # Working with JSON
 
 
@@ -185,3 +269,89 @@ Copy and paste it in your file app/illuminate
 
 - JSON - ability to decode JSON into Lua
 - Table [ print table Content], not just hash
+
+
+
+
+
+
+
+
+
+# Getting Started
+
+## Meet Lua
+Lua is a scripting language ...
+
+
+### Why Lua?
+
+What is Luna
+
+#### Flexibile
+
+### Starter Kits
+<!-- Table addons plugin -->
+<!-- JSON plugin -->
+
+
+# Data Types
+nil
+boolean
+number
+string
+function
+userdata
+thread
+table
+
+# Declearing Variables
+
+groceries = {}
+groceries <const> = {}
+
+
+https://stackoverflow.com/questions/4880368/how-to-delete-all-elements-in-a-lua-table
+# Statements and declerations
+
+
+
+
+
+## Classes
+
+## JSON
+<!-- Lua doens't provide support for JSON, however there' is a package you can install to get support for it -->
+
+<!-- Accessing values in tables -->
+
+
+# Method explore - example
+Short info 
+
+<!-- list all methods  -->
+
+
+# Property definition - Example Framework 
+Explanation about the feature
+<!-- Demo -->
+
+## Syntax
+<!-- code -->
+
+## Description
+
+
+## Examples
+
+
+
+
+
+
+
+<!-- http://lua-users.org/wiki/TablesTutorial -->
+<!-- https://developer.roblox.com/en-us/articles/Metatables -->
+<!-- https://www.lua.org/pil/19.2.html -->
+
+
