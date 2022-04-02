@@ -1,15 +1,29 @@
-#Draft
+### In Progress (needs to be verified)
+# Lua Unofficial Documentation
 
 
-
+If you're comning from a language such as JavaScript or PHP, some differences are worth noting
+```
+Count starts from 1 not 0
+0 does not mean false
+1 does not mean true
+```
 
 
 # References (Alphabetic order)
+## [Tables <small>AKA Array/Object</small>](#table)
 
 
+===========================================================================
 
-## Tables - AKA Arrays/Objects
+
+## <a name="table">Tables</a> <small>AKA Array/Object</small>
 The 'table' allows storing a collection of data under a single variable.
+
+```
+Note:
+When trying to print a table it will return you a table hash instead of the values such as: 0xd7b140
+```
 
 ```
 Note: The `table` object in other langauges woud be reffered as array/object
@@ -24,10 +38,10 @@ Creates a new `table` object(?).
 ### Methods
 
 [`table.insert()`](#table.insert)
-Adds one or more elements to the table.
+Adds one element to the table.
 
 [`table.remove()`](#table.remove)
-Removed one or more elements from the table.
+Removed one element from the table.
 
 [`table.concat()`](#table.concat)
 Returns a new table that is the calling table with other table(s).
@@ -36,10 +50,11 @@ Returns a new table that is the calling table with other table(s).
 Unpacks a table into values.
 
 
-======================================================================================
- 
+===========================================================================
+
+
 # <a name="table.insert">Table.insert()</a>
-The `table.insert()` method adds one element to the end/start(?) of the table.
+The `table.insert()` method adds one element to the start/start(?) of the table.
 
 ## Syntax
 ```lua
@@ -55,11 +70,41 @@ The `table.insert()` method adds one element to the end/start(?) of the table.
     groceries = { "Bread", "Rice"}
     table.insert(groceries, "Potatoes")
 
-   -- Result:  {"Bread", "Rice", "Potattoes}
+   -- Output:  groceries = {"Bread", "Rice", "Potattoes}
 
 ```
 
+
 # <a name="table.remove">Table.remove()</a>
+The `table.remove` method removes one element from the table.
+
+
+## Syntax
+```lua
+    table.remove(yourTable, index)
+```
+
+## Examples
+ Removing "Bread" from groceries table.
+ 
+This methods removed an item from table by index, and shifts the table.
+
+```lua
+    groceries = { "Bread", "Rice"}
+    table.insert(groceries, 1)
+
+    -- Output: groceries = { "Rice" }
+```
+
+Removing a value without shifting
+
+```lua
+    groceries = { "Bread", "Rice"}
+    groceries[1] = nil
+
+    -- Output: groceriees = { "Rice" }
+```
+
 
 # <a name="table.concat">Table.concat()</a>
 
@@ -67,11 +112,25 @@ The `table.insert()` method adds one element to the end/start(?) of the table.
 
 
 
+## Table Plugins
+
+table.clear
 
 
 
+<details>
 
 
+<summary>.</summary>
+
+notes
+.
+.
+.
+.
+.
+.
+.
 
 # Other
 ## class
@@ -354,4 +413,6 @@ Explanation about the feature
 <!-- https://developer.roblox.com/en-us/articles/Metatables -->
 <!-- https://www.lua.org/pil/19.2.html -->
 
+
+</details>
 
