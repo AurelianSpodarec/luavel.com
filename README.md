@@ -15,14 +15,14 @@ The 'table' allows storing a collection of data under a single variable.
 Note: The `table` object in other langauges woud be reffered as array/object
 ```
 
-## Constructor 
+### Constructor 
 `{}`
 Creates a new `table` object(?).
 
-## Properties
+### Properties
 
-## Methods
-[Types](#types)
+### Methods
+
 [`table.insert()`](#table.insert)
 Adds one or more elements to the table.
 
@@ -36,7 +36,7 @@ Returns a new table that is the calling table with other table(s).
 Unpacks a table into values.
 
 
-================================
+======================================================================================
  
 # <a name="table.insert">Table.insert()</a>
 The `table.insert()` method adds one element to the end/start(?) of the table.
