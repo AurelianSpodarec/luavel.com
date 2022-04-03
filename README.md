@@ -1,56 +1,54 @@
-### In Progress
-# Lua Documentation - Unofficial  🌙 
+# lua Documentation - Unofficial  🌙 
+* Note: This is WIP
+
+# [lua](https://lua.org)
+##What is lua?
+[lua](https://www.lua.org/about.html) is a powerful, efficient, lightweight, embeddable scripting language. It supports procedural programming, object-oriented programming, functional programming, data-driven programming, and data description.
+
+lua combines simple procedural syntax with powerful data description constructs based on associative arrays and extensible semantics.
+lua is dynamically typed, runs by interpreting bytecode with a register-based virtual machine, and has automatic memory management with incremental garbage collection, making it ideal for configuration, scripting, and rapid prototyping.
 
 
-# Lua 
-What is Lua?
 
-## Who is Lua for?
+## Who is lua for?
 
 Like with any language, choose the right tool for the job. 
 
-Lua is rarery use on its own, isntead its often embeded in other programs. 
+lua is rarerly used on its own, instead its usually embedded in other programs. 
 
-Notable mentioens, Roblox, Adobe Photoshop Lightroom, Angry Birds, Cheat Engine, 
+Notable mentions: Roblox, Adobe Photoshop Lightroom, Angry Birds, Cheat Engine, and Garry's Mod.
 
 
 Its very popular in the gaming industry but also its been used in network and system programs. 
 
-Modding
-Feature Enhancement notable games Minecraft
 
-Compact
-Fast in execution
-Highly extendable
-Easy to learn
-Free to use
 
-## History of Luna
+## History of lua
 
-Lua was desinged by a team of of three Brazililian scientist, Roberto Ierusalimschy, Luiz Henrique de Figueiredo, and Waldemar Celes.
+lua was desinged by a team of of three Brazililian scientist, Roberto Ierusalimschy, Luiz Henrique de Figueiredo, and Waldemar Celes.
 
-Brazil had a very stric import policy from 1984 untill 1992, which also included hardware.  Due to the hardware limitations in Brazil, the three scientist developed the scripting language called Lua.
+Brazil had a very strict import policy from 1984 untill 1992, which also included hardware. Due to the hardware limitations in Brazil, the three scientist developed the scripting language called lua.
 
 The first release was in 1993.
 
 The origin of the name  and name comes from the word `luna` which is Brazilian way of saying `moon`.
 
-Lua was slightly different and incomprated the data-description suntax of SOL, and `SOL` in Portugese means `Sun` and `Lua` meaning `Moon`.
+lua was slightly different and incomprated the data-description suntax of SOL, and `SOL` in Portugese means `Sun` and `lua` meaning `Moon`.
 
-Lua was born.
+lua was born.
 
 # Discord Server
 
-Join Lua Community server on discord! https://discord.gg/nNu6FeHC
+Join lua Community server on discord! https://discord.gg/nNu6FeHC
 
 
 ===========================================================================
 
 
 # Table of Contents
-## [Tables AKA Array/Object](#table)
-## [Math](#math)
-## [String](#string)
+### [Tables](#doc_table)
+### [Math](#math)
+### [String](#string)
 
 ## [Select](#selet)
 
@@ -58,19 +56,20 @@ Join Lua Community server on discord! https://discord.gg/nNu6FeHC
 ===========================================================================
 
 
-## <a name="table">Tables</a> AKA Array/Object
-The 'table' allows storing a collection of data under a single variable. Lua has one mechanism to represent data structure, and does not contain `Class`, `Array` and `Object`. Every data structure is reprresented by `table`.
+## <a name="doc_table">Tables</a>
+A table allows storing a collection of data under a single variable. lua has one mechanism to represent data structure, and does not have Classes, Arrays or Objects. Every data structure is represented by tables.
+
 
 The index starts at 1 instead of 0.
 
-Table is an associative array
+Looping over tables uses pairs and ipairs.
 
-looping over tables `pairs` and `ipairs`
+Tables can be treated as an array of objects(`{"array","of","objects"}`) or an object(`{name="John",age=25,isMarried:false}`)
+
 
 
 ```
-Note: When trying to print a table it will return you a table hash instead of the values such as: 0xd7b140
-Note: The `table` object in other langauges woud be reffered as array/object
+Note: When trying to print a table it will return you the table's hash instead of the values such as: "table: 0x5566951939f0"
 ```
 
 ### Constructor 
@@ -109,11 +108,11 @@ The `table.insert()` method adds one element to the end of the table.
 
 ## Syntax
 ```lua
-table.insert(yourTable, value)
+table.insert(tbl, value)
 ```
 
 ## Parameter
-`yourTable`
+`tbl`
 The table where the item should be removed from.
 
 `value`
@@ -122,16 +121,17 @@ The element to add to the end of the table.
 
 ## Examples
 
-### Adding elements to table
+### Adding elements to a table
 
 ```lua
 
-groceries = { "Bread", "Rice" }
+local groceries = { "Bread", "Rice" }
 table.insert(groceries, "Potatoes")
 
--- Output:  groceries = {"Bread", "Rice", "Potattoes}
+-- Output:  groceries = {"Bread", "Rice", "Potatoes"}
 
 ```
+
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -144,11 +144,11 @@ The `table.remove()` method removes one element from the table and shifts it.
 
 ## Syntax
 ```lua
-table.remove(yourTable, index)
+table.remove(tbl, index)
 ```
 
 ## Parameter
-`yourTable`
+`tbl`
 The table where the item should be removed from.
 
 `index`
@@ -170,29 +170,29 @@ table.remove(groceries, 2)
 
 
 # <a name="table-concat">Table.concat()</a>
-The `table.concat()` function is used to concatinate/combine table values.
+The `table.concat()` function is used to concatinate table values into a string.
 
 ## Syntax
 ```lua
-table.concat(yourTable, string)
+table.concat(yourTable, seperator)
 ```
 
 ## Parameter
 `yourTable`
 The table to be concatinated.
 
-`string (optional)`
+`seperator (optional)`
 Used as a separator between values.
 
 ## Examples
 
 ### Only table provided to the function.
 ```lua
-local yourTable = {"My", "little", "ponny", "barked", "today.", "Woof!"}
+local tbl = {"The","fox","jumps","over","the","lazy","dog",}
 
-print(table.concat(yourTable)) 
+print(table.concat(tbl)) 
 
--- Output: Mylittleponnybarkedtoday.Woof!
+-- Output: Thefoxjumpsoverthelazydog
 ```
 
 ```lua
@@ -206,11 +206,11 @@ print(table.concat(tab))
 ### Table provided with the second parameter
 
 ```lua
-local yourTable = {"My", "little", "ponny", "barked", "today.", "Woof!"}
+local tbl = {"The","fox","jumps","over","the","lazy","dog",}
 
-print(table.concat(yourTable, " ")) 
+print(table.concat(tbl," ")) 
 
--- Output: My little ponny barked today. Woof!
+-- Output: The fox jumps over the lazy dog
 ```
 
 ```lua
@@ -220,7 +220,6 @@ print(table.concat(yourTable, "-"))
 
 -- Output: 1-2-3-4
 ```
-
 
 
 
