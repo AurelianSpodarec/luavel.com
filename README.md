@@ -39,11 +39,15 @@ Lua was slightly different and incomprated the data-description suntax of SOL, a
 
 Lua was born.
 
+# Discord Server
+
+Join Lua Community server on discord! https://discord.gg/nNu6FeHC
+
 
 ===========================================================================
 
 
-# References v
+# Table of Contents
 ## [Tables AKA Array/Object](#table)
 ## [Math](#math)
 ## [String](#string)
@@ -100,8 +104,6 @@ Sorts the values in a table.
 
 
 
-
-
 # <a name="table-insert">Table.insert()</a>
 The `table.insert()` method adds one element to the end of the table.
 
@@ -111,6 +113,11 @@ table.insert(yourTable, value)
 ```
 
 ## Parameter
+`yourTable`
+The table where the item should be removed from.
+
+`value`
+The element to add to the end of the table.
 
 
 ## Examples
@@ -126,12 +133,13 @@ table.insert(groceries, "Potatoes")
 
 ```
 
+**[⬆ back to top](#table-of-contents)**
 
 
 
 
 # <a name="table-remove">Table.remove()</a>
-The `table.remove()` method removes one element from the table.
+The `table.remove()` method removes one element from the table and shifts it.
 
 
 ## Syntax
@@ -146,11 +154,8 @@ The table where the item should be removed from.
 `index`
 The index (position) of the current element in the array.
 
-
 ## Examples
  Removing "Bread" from groceries table.
- 
-This methods removed an item from table by index, and shifts the table.
 
 ```lua
 groceries = { "Bread", "Rice", "Peas" }
@@ -158,8 +163,8 @@ table.remove(groceries, 2)
 
 -- Output: groceries = { "Bread", "Peas" }
 ```
-Another way to delete is to use rawset???
 
+**[⬆ back to top](#table-of-contents)**
 
 
 
@@ -220,12 +225,48 @@ print(table.concat(yourTable, "-"))
 
 
 # <a name="table-pack">Table.pack()</a>
-The `table.pack()` methods is used to 
+The `table.pack()` method is used to combine values into a newly created table.
 
-local a = table.pack(10,20,30, 40)
-for _, v in pairs(a) do print(v) end
+## Syntax
+```
+table.pack(elements)
+```
 
-So this returns the total of all values, and then inserts the total number to the table
+## Parameters
+`elements`
+The values to combine into a newly created table
+
+
+## Examples
+
+This will combine all values into a new table.
+```lua
+productID =  234 
+productName = "Dark Chocolate"
+productIngredients = { "Cocoa Mass", "Cocoa Butter", "Vanilla", "Cocoa Solids: 70% min" }
+
+darkChocolateTable = table.pack(productID, productName, productIngredients)
+ 
+ print(darkChocolateTable)
+
+ -- Output: table: 0x564c9ac0a210
+ ```
+ 
+ Accessing the product igredients and getting the second one.
+
+ ```lua
+productID =  234 
+productName = "Dark Chocolate"
+productIngredients = { "Cocoa Mass", "Cocoa Butter", "Vanilla", "Cocoa Solids: 70% min" }
+
+darkChocolateTable = table.pack(productID, productName, productIngredients)
+ 
+print(darkChocolateTable[3][2])
+
+-- Output: Cocoa Butter
+ ```
+
+**[⬆ back to top](#table-of-contents)**
 
 
 
@@ -280,6 +321,7 @@ print(table.unpack(groceries))
 -- Output: table: 0x55db576a62a0 table: 0x55db576a4dd0 table: 0x55db941a4dd1
 ```
 
+**[⬆ back to top](#table-of-contents)**
 
 
 
@@ -303,6 +345,9 @@ table.sort(yourTable, value)
 
 ## Examples
 
+
+
+**[⬆ back to top](#table-of-contents)**
 
 
 ===========================================================================
@@ -368,7 +413,7 @@ Lua doesn't require semicolons, but you're free to put them if you want.
 
 ## Table 
 table.clear()
-table.pack()
+
 
 ## JSON
 link to JSON decoder - http://dkolf.de/src/dkjson-lua.fsl/home
