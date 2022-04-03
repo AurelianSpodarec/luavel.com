@@ -77,21 +77,21 @@ Creates a new `table`.
 
 ### Methods
 
-[`table.insert()`](#table-insert)
+[`table.insert()`](#table-insert) 
 Adds one element to the table.
 
-[`table.remove()`](#table-remove)
+[`table.remove()`](#table-remove) 
 Removes one element from the table.
 
-[`table.pack()`](#table-pack)
+[`table.pack()`](#table-pack) 
 
-[`table.unpack()`](#table-unpack)
+[`table.unpack()`](#table-unpack) 
 Unpacks a table into values.
 
-[`table.concat()`](#table-concat)
+[`table.concat()`](#table-concat) 
 Returns a combined string from a table.
 
-[`table.sort()`](#table-sort)
+[`table.sort()`](#table-sort) 
 Sorts the values in a table.
 
 
