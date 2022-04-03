@@ -48,56 +48,57 @@ Downloading Lua
 Join Lua Community server on discord! https://discord.gg/nNu6FeHC
 
 
-==========================================================================
-Lua Styleguide
-Lua Documentation (you are here)
-===========================================================================
 
+And then have specific Guide that's more detailed
 # Lua guide
+## Variables
+## 
+## Error Handling
+==========================================================================
 
 
 
+Guide
+Refference
 
-Editors Note: Table of content should be created first for a better clarity how to structure the docs
+
+
 ===========================================================================
 
+# Lua Refference
 
-Maybe have a LIST of ALL functions, data types etc... categorized just by that - a refference of everything. 
 
 
-# Reference
+
+
 
 ## Functions
-`next()` (table only function)
-`getmetatable()` (object) - what's an object anyway, a table? I guess...
-`setmetatable()`(table only)
-`rawset()`  (table only)
-`rawget()` (table only function)
-`rawlen()` (table/string - returns length)
-`rawequal()` (?)
-`pairs()` (table only function)
-`ipairs()`(table only function)
+### Indepenndent
+### Table Functions
+### Files
+### FIle Loaading Functions
+### Error Handling Functions
 
-<!-- Should go to Error Handling section of the documentation -->
-`assert()`
-`warn()`
-`error()`
-`pcall()`
-`xpcall()`
-<!-- Other -->
-`print()`
-`select()`
-`tonumber()`
-`tostring()`
-`type()`
-<!-- Look at node docs where they put this -->
-`load()`
-`loadfile()`
-`dofile()`
-<!-- ? -->
-`collectgarbage()`
+## [Built in Objects](#built-in-objects)
+### [String](#built-in-objects_string)
+### [Math](#built-in-objects_math)
+### [Operating System Facilities (OS)](#built-in-objects_os)
+### [Coroutine](#built-in-objects_coroutine)
+### [Table](#built-in-objects_table)
 
-## Statements & declarations
+## Expressions and Operators
+### Asigment operators
+### Arithmetic operators
+
+## Statements & Declarations
+### Variables
+### Iterators
+### Control Flow
+### ...whatever relse there is
+
+
+
+ 
 and
 break
 do
@@ -119,42 +120,9 @@ then
 true      
 until     
 while
-
-
-## Libraries
-### Math
-### String
-### Operating System Facilities (OS)
-### Coroutine
-
-
-
-
-And then have specific Guide that's more detailed
-
-
--=-=
-
-
-## [String](#doc_string)
-## [Math](#doc_math)
-## [Operators](#doc_operators)
-
-
-
  
-          +     -     *     /     %     ^     #
-     ==    ~=    <=    >=    <     >     =
-     (     )     {     }     [     ]
-     ;     :     ,     .     ..    ...
 
-
- 
-## Tables
-## Erros
-## Modulos
-
-
+<!-- 
 <!-- 
 
 # Table of Contents
@@ -172,61 +140,28 @@ And then have specific Guide that's more detailed
 ## Operators
 ## Iterations
 
-
-
- 
-
-<!-- ## [Class](#class)
-## [Functions](#functions)
-## [Array](#array)
-
-
-## [Modules](#modules)
-  -->
-
-<!-- - /Librar
--  I/O
-
-
-- Tables
-- Coroutine
-
-- Metatables
-- Error handling -->
-
+-- > -->
 
 
 ===========================================================================
 
+
+# <a name="doc_statements_and_declarations">Statements & declarations<a>
+
 ## Declaration
 ### [variable?]
 ### [<const>]
-
 ## Control Flow
 ### [break]()
-
-
 ## Iterations
 ### [if ... then]()
 ### [for ... do]()
 ### [while .... do]()
 
-
-# Tutorials
-# Documentation
+ 
 
 
 
-
-
-# Table of Contents
-
-## 
-
-
-
-### [Table](#doc_table)
-### [Metatable](#doc_metatable)
 
 ## [Functions](#)
 ### [Select](#doc_select)
@@ -263,9 +198,39 @@ And then have specific Guide that's more detailed
 
 ===========================================================================
 
+# <a name="doc_functions">Functions</a>
+
+## <a name="doc_functions_independent">Indepenndent</a>
+`print()`  
+`select()`  
+`tonumber()`  
+`tostring()`  
+`type()`  
+`collectgarbage()`  
+`rawequal()`  
+`rawlen()`  
+## <a name="doc_table_functions">Table Functions</a>
+See table functions to view the functions
+## <a name="doc_functions_files">Files</a>
+`load()`  
+`loadfile()`  
+`dofile()` 
+## <a name="doc_functions_error_handling">Error Handling</a>
+`assert()`  
+`warn()`  
+`error()`  
+`pcall()`  
+`xpcall()`  
 
 
-# <a name="doc_perators">Operators</a>
+
+
+===========================================================================
+
+
+
+
+# <a name="doc_operators">Operators</a>
 
 ## Arithmetic Operators
 
@@ -277,18 +242,180 @@ Modulo %
 Exponentiation ^
 Negation (Unary-)
 
-## Logical Operators
-not
-or
-and
+Relational Operators
+ 
 
+## Logical Operators
+
+All logical operators consider `false` and `nil` nil as false, and anything else as true.
+
+<table class="fullwidth-table">
+  <caption>
+    Logical operators
+  </caption>
+  
+  <thead>
+    <tr>
+      <th scope="col">Operator</th>
+      <th scope="col">Usage</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        <a href="Reference/Operators/Logical_AND"
+          >Logical AND</a
+        >
+        (<code>and</code>)
+      </td>
+      <td><code>expr1 &#x26;&#x26; expr2</code></td>
+      <td>
+        Returns <code>expr1</code> if it can be converted to <code>false</code>;
+        otherwise, returns <code>expr2</code>. Thus, when used with Boolean
+        values, <code>&#x26;&#x26;</code> returns <code>true</code> if both
+        operands are true; otherwise, returns <code>false</code>.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="Reference/Operators/Logical_OR"
+          >Logical OR </a
+        >(<code>or</code>)
+      </td>
+      <td><code>expr1 || expr2</code></td>
+      <td>
+        Returns <code>expr1</code> if it can be converted to <code>true</code>;
+        otherwise, returns <code>expr2</code>. Thus, when used with Boolean
+        values, <code>||</code> returns <code>true</code> if either operand is
+        true; if both are false, returns <code>false</code>.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="Reference/Operators/Logical_NOT">Logical NOT </a>(<code>!</code>)
+      </td>
+      <td><code>not</code></td>
+      <td>
+        Returns <code>false</code> if its single operand that can be converted
+        to <code>true</code>; otherwise, returns <code>true</code>.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+ 
 ## Relational Operators
-==
-~=
-<
->
-<=
->=
+
+Relational Operators always resolve in `true` or `false`.
+
+<table class="standard-table">
+<caption>
+  Relational Operators
+</caption>
+
+<thead>
+<tr>
+  <th scope="col">Operator</th>
+  <th scope="col">Description</th>
+  <th scope="col">Examples returning true</th>
+</tr>
+</thead>
+
+<tbody>
+  <tr>
+    <td>
+      <a href="Reference/Operators#equality"
+        >Equal</a
+      >
+      (<code>==</code>)
+    </td>
+    <td>Returns <code>true</code> if the operands are equal.</td>
+    <td>
+      <code>3 == var1</code>
+      <p><code>"3" == var1</code></p>
+      <code>3 == '3'</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="Reference/Operators#inequality"
+        >Not equal</a
+      >
+      (<code>~=</code>)
+    </td>
+    <td>Returns <code>true</code> if the operands are not equal.</td>
+    <td>
+      <code>var1 != 4<br />var2 != "3"</code>
+    </td>
+  </tr>
+    <td>
+      <a
+        href="Reference/Operators#greater_than_operator"
+        >Greater than</a
+      >
+      (<code>></code>)
+    </td>
+    <td>
+      Returns <code>true</code> if the left operand is greater than the right
+      operand.
+    </td>
+    <td>
+      <code>var2 > var1<br />"12" > 2</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a
+        href="Reference/Operators#greater_than_or_equal_operator"
+        >Greater than or equal</a
+      >
+      (<code>>=</code>)
+    </td>
+    <td>
+      Returns <code>true</code> if the left operand is greater than or equal
+      to the right operand.
+    </td>
+    <td>
+      <code>var2 >= var1<br />var1 >= 3</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a
+        href="Reference/Operators#less_than_operator"
+        >Less than</a
+      >
+      (<code>&#x3C;</code>)
+    </td>
+    <td>
+      Returns <code>true</code> if the left operand is less than the right
+      operand.
+    </td>
+    <td>
+      <code>var1 &#x3C; var2<br />"2" &#x3C; 12</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a
+        href="Reference/Operators#less_than_or_equal_operator"
+        >Less than or equal</a
+      >
+      (<code>&#x3C;=</code>)
+    </td>
+    <td>
+      Returns <code>true</code> if the left operand is less than or equal to
+      the right operand.
+    </td>
+    <td>
+      <code>var1 &#x3C;= var2<br />var2 &#x3C;= 5</code>
+    </td>
+  </tr>
+</tbody>
+</table>
+
 
 
 
@@ -404,7 +531,9 @@ Metamethod
 
 
 
-
+## General Functions
+[`rawlen()`](#table_function_rawlen)  (table/string - returns length)
+[`rawequal()`](#table_function_rawequal)  (???? rawequal(v1, v2) wtf is that)
 
 
 
@@ -502,16 +631,21 @@ To get a table values you need to loop over them. Check out `pairs` and `ipairs.
 `{}` Creates a new `table`.
 
 
-### Functions
+### Table Functions
 [`next()`](#table_function_next) (table only function)
-[`getmetatable()`](#table_function_getmetatable) (object) - what's an object anyway, a table? I guess...
+
+[`getmetatable()`](#table_function_getmetatable) (table) - what's an object anyway, a table? I guess...
+
 [`setmetatable()`](#table_function_setmetatable)  (table only)
+
 [`rawset()`](#table_function_rawset)  (table only)
+
 [`rawget()`](#table_function_rawget)  (table only function)
-[`rawlen()`](#table_function_rawlen)  (table/string - returns length)
-[`rawequal()`](#table_function_rawequal)  (???? rawequal(v1, v2) wtf is that)
+
 [`pairs()`](#table_function_pairs)  (table only function)
+
 [`ipairs()`](#table_function_ipairs)  (table only function)
+
 
 ### Methods
 
