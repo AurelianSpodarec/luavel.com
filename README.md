@@ -1,5 +1,5 @@
 # Lua Documentation - Unofficial  🌙 
-* Note: This is WIP
+* Note: This is Work in progress
 
 # [Lua](https://lua.org)
 
@@ -38,32 +38,357 @@ Lua was slightly different and incomprated the data-description suntax of SOL, a
 
 Lua was born.
 
+
+# Getting Started
+
+Downloading Lua
+
 # Discord Server
 
 Join Lua Community server on discord! https://discord.gg/nNu6FeHC
 
 
+==========================================================================
+Lua Styleguide
+Lua Documentation (you are here)
 ===========================================================================
+
+# Lua guide
+
+
+
+
+Editors Note: Table of content should be created first for a better clarity how to structure the docs
+===========================================================================
+
+# References
+
+
+## BUilt in objects
+Tables
+
+## Statements & declarations
+ and       break     do        else      elseif
+     end       false     for       function  if
+     in        local     nil       not       or
+     repeat    return    then      true      until     while
+     function
+
+          +     -     *     /     %     ^     #
+     ==    ~=    <=    >=    <     >     =
+     (     )     {     }     [     ]
+     ;     :     ,     .     ..    ...
+
+
+
+## Functions
+## Tables
+## Erros
+## Modulos
+
+
+
+There are eight basic types in Lua: 
+nil
+boolean
+number 
+string
+function
+userdata 
+thread
+table
+<!-- 
+
+# Table of Contents
+
+## Variables
+## Baisc Types
+### Nil
+### Boolean
+### Number
+### String
+### Function
+### Userdata
+### Thread
+### Table
+## Operators
+## Iterations
+
+## Libraries
+### Math
+### String
+### Operating System Facilities (OS)
+### Coroutine -->
+
+ 
+
+<!-- ## [Class](#class)
+## [Functions](#functions)
+## [Array](#array)
+
+
+## [Modules](#modules)
+  -->
+
+<!-- - /Librar
+-  I/O
+
+
+- Tables
+- Coroutine
+
+- Metatables
+- Error handling -->
+
+
+
+===========================================================================
+
+## Declaration
+### [variable?]
+### [<const>]
+
+## Control Flow
+### [break]()
+
+
+## Iterations
+### [if ... then]()
+### [for ... do]()
+### [while .... do]()
+
+
+# Tutorials
+# Documentation
+
+
+
+
+
 
 
 # Table of Contents
-### [Tables](#doc_table)
-### [Math](#doc_math)
-### [String](#doc_string)
 
-## [Select](#doc_selet)
+## 
+### [String](#doc_string)
+### [Math](#doc_math)
+### [Table](#doc_table)
+### [Metatable](#doc_metatable)
+
+## [Functions](#)
+### [Select](#doc_select)
+ 
+
+## [Expressions]
+
+
+
+
+## [Statements]
+### [local]()
+
+
+### [do]()
+### [else]()
+### [elseif]()
+### [function]()
+### [end]()
+
+### [in]()
+### [repeat]()
+### [then]()
+### [until]()
+
+### [true]()
+### [false]()
+### [return]()
+### [nil]()
+
+
+## [Operators]
+
+### [Arithmetic Operators]
+#### [Addition +]
+#### [Subtraction -]
+#### [Multiplication *]
+#### [Division /]
+#### [Modulo %]
+#### [Exponentiation ^]
+#### [Negation (Unary-)]
+
+### [Logical Operators]
+#### [not]
+#### [or]
+#### [and]
+
+### [Relational Operators]
+    ==
+    ~=
+    <
+    >
+    <=
+    >=
+
 
 
 ===========================================================================
 
 
+
+
+
+
+
+
+===========================================================================
+
+
+# <a name="string">String</a>
+
+## Methods
+
+`String.byte()`
+`String.char()`
+`String.dump()`
+`String.find()`
+`String.format()`
+`String.gmatch()`
+`String.gsub()`
+`String.len()`
+`String.lower()`
+`String.match()`
+`String.pack()`
+`String.packsize()`
+`String.rep()`
+`String.reverse()`
+`String.sub()`
+`String.unpack()`
+`String.upper()`
+
+
+===========================================================================
+
+
+# <a name="math">Math</a>
+
+## Methods
+`Math.modf()`
+`Math.floor()`
+`Math.max()`
+`Math.celi()`
+`select()`
+
+
+# <a name="modules">Modules</a>
+
+## Methods
+`require()`
+`package.config`
+`package.cpath`
+`package.loaded`
+`package.loadlib()`
+`package.path`
+`package.preload`
+`package.searches`
+
+
+===========================================================================
+
+# <a name="functions">Functions</a>
+
+## Methods
+`next()`
+`getmetatable()`
+`setmetatable()`
+`rawset()`
+`rawget()`
+`rawlen()`
+`rawequal()`
+
+`pairs()`
+`ipairs()`
+
+`assert()`
+`print()`
+`warn()`
+`error()`
+
+`tonumber()`
+`tostring()`
+`type()`
+
+`load()`
+`loadfile()`
+`dofile()`
+
+`pcall()`
+`xpcall()`
+
+`collectgarbage()`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## <a name="doc_table">Tables</a>
+
+<details>
+Editor notes: Show how to loop over  the tables, how to loop over them. Instead of showing just methods, include how to use a table somewhere.
+</details>
+
 A table allows storing a collection of data under a single variable. Lua has one mechanism to represent data structure, and does not have Classes, Arrays or Objects. Every data structure is represented by tables.
 
-
-The index starts at 1 instead of 0.
-
-Looping over tables uses pairs and ipairs.
+Unlike in other programming languages where's the index starts from `0`, Lua starts counting from `1`. Most libraries will start with the index of `1` therefore its a good practice to follow the convetion.
 
 
 ### Common Usages
@@ -78,7 +403,9 @@ function Class.makeSound(sound)
     return sound
 end
 
-function Class. 
+function Class.sit()
+-- code...
+end
 
 print(Class.makeSound("Woof!"))
 
@@ -87,7 +414,7 @@ print(Class.makeSound("Woof!"))
 
 #### Reasemblance of an Array
 ```lua 
-local array = { "Dog", "Cat", "Hippo" }`)
+local array = { "Dog", "Cat", "Hippo" }
 ``` 
 
 #### Reasemblance of an Object
@@ -103,11 +430,12 @@ local object = {
 Note: Printing a table will return table's hash such as `table: 0x5566951939f0`
 ```
 
-### Constructor 
-`{}`
-Creates a new `table`.
+To get a table values you need to loop over them. Check out `pairs` and `ipairs.
 
-### Properties
+
+### Constructor 
+`{}` Creates a new `table`.
+
 
 ### Methods
 
@@ -128,6 +456,8 @@ Returns a combined string from a table.
 
 [`table.sort()`](#table-sort)  
 Sorts the values in a table.
+
+[`table.move()`](#table-move)
 
 
 
@@ -381,37 +711,6 @@ table.sort(tbl, value)
 **[⬆ back to top](#table-of-contents)**
 
 
-===========================================================================
-
-
-# <a name="string">String</a>
-
-## Methods
-
-`String.upper()`
-`String.lower()`
-`String.format()`
-`String.gsub()`
-`String.byte()`
-`String.char()`
-
-
-
-===========================================================================
-
-
-# <a name="math">Math</a>
-
-## Methods
-`Math.modf()`
-`Math.floor()`
-`Math.max()`
-`Math.celi()`
-
-
-
-
-
 
 ----------------------------------
 
@@ -448,6 +747,91 @@ table.clear()
 
 ## JSON
 link to JSON decoder - http://dkolf.de/src/dkjson-Lua.fsl/home
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ----------------------------------
@@ -553,27 +937,7 @@ courutine.resume() - continue executoin
 
 # Reserved words
 
-and
-break
-do
-else
-elseif
-end
-false
-for ... do
-function
-if ... then
-in
-local
-nil
-not
-or
-repeat
-return
-then
-true
-until
-while .... do
+
 
 # Other
 ## const
@@ -602,37 +966,9 @@ while .... do
 
 Use real life examples, not some foo bar, a, e, i... 
 
+ 
 
-
-# Comprehensive Guide for Lua by examples 
-
-
-# Tables AKA Objects/Arrays
-
-You can follow along and compile Lua online without downloading it: https://replit.com/languages/Lua
-
-Official Download site for Lua:
-
-## <a name='TOC'>Table of Contents</a>
-
-  1. [Types](#types)
-
-   ```Lua
-    -- bad
-    woof
-
-    -- good
-     miao
-    ```
-
-
-    **[[⬆]](#TOC)**
-
-    https://stackoverflow.com/questions/41942289/display-contents-of-tables-in-Lua
-
-## <a name='types'>Types</a>
-JS Example
-
+ 
 <const>
 
 # Variables
