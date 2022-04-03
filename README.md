@@ -45,15 +45,16 @@ Lua was born.
 
 # References v
 ## [Tables AKA Array/Object](#table)
-## [Select]
-## [Math]
-## [String]
+## [Math](#math)
+## [String](#string)
+
+## [Select](#selet)
 
 
 ===========================================================================
 
 
-## <a name="table">Tables</a> <small>AKA Array/Object</small>
+## <a name="table">Tables</a> AKA Array/Object
 The 'table' allows storing a collection of data under a single variable. Lua has one mechanism to represent data structure, and does not contain `classes`, `arrays` and `objects`. Every data structure is reprresented by `table`.
 
 The index starts at 1 instead of 0.
