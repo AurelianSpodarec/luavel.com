@@ -88,13 +88,17 @@ Removes one element from the table.
 Unpacks a table into values.
 
 [`table.concat()`](#table-concat)
-Returns a new table that is the calling table with other table(s). (???)
+Returns a combined string from a table.
 
 [`table.sort()`](#table-sort)
+Sorts the values in a table.
 
 
 
 ===========================================================================
+
+
+
 
 
 # <a name="table-insert">Table.insert()</a>
@@ -114,12 +118,15 @@ table.insert(yourTable, value)
 
 ```lua
 
-groceries = { "Bread", "Rice"}
+groceries = { "Bread", "Rice" }
 table.insert(groceries, "Potatoes")
 
 -- Output:  groceries = {"Bread", "Rice", "Potattoes}
 
 ```
+
+
+
 
 
 # <a name="table-remove">Table.remove()</a>
@@ -132,6 +139,11 @@ table.remove(yourTable, index)
 ```
 
 ## Parameter
+`yourTable`
+The table where the item should be removed from.
+
+`index`
+The index (position) of the current element in the array.
 
 
 ## Examples
@@ -144,31 +156,31 @@ groceries = { "Bread", "Rice", "Peas" }
 table.remove(groceries, 2)
 
 -- Output: groceries = { "Bread", "Peas" }
-
 ```
-
 Another way to delete is to use rawset???
+
+
+
 
 
 # <a name="table-concat">Table.concat()</a>
 The `table.concat`function is used to concatinate/combine table values.
-
 
 ## Syntax
 ```lua
 table.concat(yourTable, string)
 ```
 
-
 ## Parameter
+`yourTable`
+The table to be concatinated.
 
 `string (optional)`
 Used as a separator between values.
 
-
 ## Examples
 
-Only table provided to the function.
+### Only table provided to the function.
 ```lua
 local yourTable = {"My", "little", "ponny", "barked", "today.", "Woof!"}
 
@@ -177,7 +189,15 @@ print(table.concat(yourTable))
 -- Output: Mylittleponnybarkedtoday.Woof!
 ```
 
-Table provided with the second parameter as being a space.
+```lua
+local tab = { 1, 2, 3, 4 }
+
+print(table.concat(tab)) 
+
+-- Output: 1234
+```
+
+### Table provided with the second parameter as being a space.
 ```lua
 local yourTable = {"My", "little", "ponny", "barked", "today.", "Woof!"}
 
@@ -188,17 +208,79 @@ print(table.concat(yourTable, " "))
 
 Table provided with the second parameter as being a dash.
 ```lua
-local tab = { 1, 2, 3, 4 }
+local yourTable = { 1, 2, 3, 4 }
 
-print(table.concat(tab, "-")) 
+print(table.concat(yourTable, "-")) 
 
 -- Output: 1-2-3-4
 ```
 
 
+
+
 # <a name="table-pack">Table.pack()</a>
+The `table.pack()` methods is used to 
+
+local a = table.pack(10,20,30, 40)
+for _, v in pairs(a) do print(v) end
+
+So this returns the total of all values, and then inserts the total number to the table
+
+
+
+
 
 # <a name="table-unpack">Table.unpack()</a>
+
+The `table.unpack` returns all values from a table.
+
+## Syntax
+
+```lua
+table.unpack(yourTable)
+```
+
+## Parameters
+`yourTable`
+The table to be unpacked.
+
+## Examples
+
+Unpacking a table
+```lua
+groceries = { "Bread", "Rice", "Peas" }
+print(table.unpack(groceries))
+
+-- Output: Bread Rice Peas
+```
+
+Unpacking a table with tables inside
+```lua
+groceries = {
+    {
+        id = 31,
+        name = "Bread",
+        quantity = 2
+    },
+    {
+        id = 242,
+        name = "Rice",
+        quantity = 1
+    },
+    {
+        id = 493,
+        name = "Peas",
+        quantity = 1
+    }
+}
+
+print(table.unpack(groceries))
+
+-- Output: table: 0x55db576a62a0 table: 0x55db576a4dd0 table: 0x55db941a4dd1
+```
+
+
+
 
 
 
@@ -291,6 +373,14 @@ table.pack()
 link to JSON decoder - http://dkolf.de/src/dkjson-lua.fsl/home
 
 
+----------------------------------
+
+
+# I'm looking for a
+## Class
+## Array
+
+
 <details>
 
 
@@ -321,8 +411,6 @@ notes
 
 
 
-# I miss
-## CLasses
 
 
 
