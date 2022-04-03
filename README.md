@@ -55,7 +55,7 @@ Lua was born.
 
 
 ## <a name="table">Tables</a> AKA Array/Object
-The 'table' allows storing a collection of data under a single variable. Lua has one mechanism to represent data structure, and does not contain `classes`, `arrays` and `objects`. Every data structure is reprresented by `table`.
+The 'table' allows storing a collection of data under a single variable. Lua has one mechanism to represent data structure, and does not contain `Class`, `Array` and `Object`. Every data structure is reprresented by `table`.
 
 The index starts at 1 instead of 0.
 
@@ -131,7 +131,7 @@ table.insert(groceries, "Potatoes")
 
 
 # <a name="table-remove">Table.remove()</a>
-The `table.remove` method removes one element from the table.
+The `table.remove()` method removes one element from the table.
 
 
 ## Syntax
@@ -165,7 +165,7 @@ Another way to delete is to use rawset???
 
 
 # <a name="table-concat">Table.concat()</a>
-The `table.concat`function is used to concatinate/combine table values.
+The `table.concat()` function is used to concatinate/combine table values.
 
 ## Syntax
 ```lua
@@ -198,7 +198,8 @@ print(table.concat(tab))
 -- Output: 1234
 ```
 
-### Table provided with the second parameter as being a space.
+### Table provided with the second parameter
+
 ```lua
 local yourTable = {"My", "little", "ponny", "barked", "today.", "Woof!"}
 
@@ -207,7 +208,6 @@ print(table.concat(yourTable, " "))
 -- Output: My little ponny barked today. Woof!
 ```
 
-Table provided with the second parameter as being a dash.
 ```lua
 local yourTable = { 1, 2, 3, 4 }
 
@@ -233,7 +233,7 @@ So this returns the total of all values, and then inserts the total number to th
 
 # <a name="table-unpack">Table.unpack()</a>
 
-The `table.unpack` returns all values from a table.
+The `table.unpack()` returns all values from a table.
 
 ## Syntax
 
