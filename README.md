@@ -1,11 +1,13 @@
 ### In Progress
-# Lua Unofficial Documentation
+# Lua Documentation - Unofficial  🌙 
 
 
-# Lua
+# Lua 
 What is Lua?
 
 ## Who is Lua for?
+
+Like with any language, choose the right tool for the job. 
 
 Lua is rarery use on its own, isntead its often embeded in other programs. 
 
@@ -25,11 +27,17 @@ Free to use
 
 ## History of Luna
 
-Lua was desinged by a team of of three Brazililian scientist, Roberto Ierusalimschy, Luiz Henrique de Figueiredo, and Waldemar Celes. The first Lua release was in 1993.
+Lua was desinged by a team of of three Brazililian scientist, Roberto Ierusalimschy, Luiz Henrique de Figueiredo, and Waldemar Celes.
 
-Brazil had a very stric import policy from 1984 untill 1992, which also included hardware.  Due to the hardware limitations in Brazil, the three scientist developed the scripting language, Lua.
+Brazil had a very stric import policy from 1984 untill 1992, which also included hardware.  Due to the hardware limitations in Brazil, the three scientist developed the scripting language called Lua.
 
-The name comes from the world `luna` which is Brazilian way of saying `moon`.
+The first release was in 1993.
+
+The origin of the name  and name comes from the word `luna` which is Brazilian way of saying `moon`.
+
+Lua was slightly different and incomprated the data-description suntax of SOL, and `SOL` in Portugese means `Sun` and `Lua` meaning `Moon`.
+
+Lua was born.
 
 
 ===========================================================================
@@ -74,11 +82,13 @@ Adds one element to the table.
 [`table.remove()`](#table-remove)
 Removes one element from the table.
 
-[`table.concat()`](#table-concat)
-Returns a new table that is the calling table with other table(s). (???)
+[`table.pack()`](#table-pack)
 
 [`table.unpack()`](#table-unpack)
 Unpacks a table into values.
+
+[`table.concat()`](#table-concat)
+Returns a new table that is the calling table with other table(s). (???)
 
 [`table.sort()`](#table-sort)
 
@@ -88,7 +98,7 @@ Unpacks a table into values.
 
 
 # <a name="table-insert">Table.insert()</a>
-The `table.insert()` method adds one element to the start/end(?) of the table.
+The `table.insert()` method adds one element to the end of the table.
 
 ## Syntax
 ```lua
@@ -130,27 +140,63 @@ table.remove(yourTable, index)
 This methods removed an item from table by index, and shifts the table.
 
 ```lua
-groceries = { "Bread", "Rice"}
-table.insert(groceries, 1)
+groceries = { "Bread", "Rice", "Peas" }
+table.remove(groceries, 2)
 
--- Output: groceries = { "Rice" }
+-- Output: groceries = { "Bread", "Peas" }
+
 ```
-
-Removing a value without shifting
-
-```lua
-groceries = { "Bread", "Rice"}
-groceries[1] = nil
-
--- Output: groceriees = { "Rice" }
-```
-
 
 Another way to delete is to use rawset???
 
+
 # <a name="table-concat">Table.concat()</a>
+The `table.concat`function is used to concatinate/combine table values.
 
 
+## Syntax
+```lua
+table.concat(yourTable, string)
+```
+
+
+## Parameter
+
+`string (optional)`
+Used as a separator between values.
+
+
+## Examples
+
+Only table provided to the function.
+```lua
+local yourTable = {"My", "little", "ponny", "barked", "today.", "Woof!"}
+
+print(table.concat(yourTable)) 
+
+-- Output: Mylittleponnybarkedtoday.Woof!
+```
+
+Table provided with the second parameter as being a space.
+```lua
+local yourTable = {"My", "little", "ponny", "barked", "today.", "Woof!"}
+
+print(table.concat(yourTable, " ")) 
+
+-- Output: My little ponny barked today. Woof!
+```
+
+Table provided with the second parameter as being a dash.
+```lua
+local tab = { 1, 2, 3, 4 }
+
+print(table.concat(tab, "-")) 
+
+-- Output: 1-2-3-4
+```
+
+
+# <a name="table-pack">Table.pack()</a>
 
 # <a name="table-unpack">Table.unpack()</a>
 
@@ -170,7 +216,39 @@ table.sort(yourTable, value)
 
 ## Parameters
 
+
+
 ## Examples
+
+
+
+===========================================================================
+
+
+# <a name="string">String</a>
+
+## Methods
+
+`String.upper()`
+`String.lower()`
+`String.format()`
+`String.gsub()`
+`String.byte()`
+`String.char()`
+
+
+
+===========================================================================
+
+
+# <a name="math">Math</a>
+
+## Methods
+`Math.modf()`
+`Math.floor()`
+`Math.max()`
+`Math.celi()`
+
 
 
 
@@ -178,10 +256,36 @@ table.sort(yourTable, value)
 
 ----------------------------------
 
+# Comments
+
+## Single line comments
+
+```lua
+-- 
+```
+
+## Multi-line comments
+
+```lua
+--[[
+    
+
+
+--]]
+```
+
+
+# Semicolons
+Lua doesn't require semicolons, but you're free to put them if you want.
+
+
+----------------------------------
+
 # Plugins
 
 ## Table 
-table.clear
+table.clear()
+table.pack()
 
 ## JSON
 link to JSON decoder - http://dkolf.de/src/dkjson-lua.fsl/home
@@ -229,8 +333,31 @@ notes
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
+# Lua Guidelines
+It seems like general Lua programmers code seems to follow PHP style
 
 
+## Variables
+## Operators and comparison
+## 
+
+
+
+------------------------------------
+
+# Variables
+
+groceries
+groceries <const>
+
+
+
+Moon theme, because Lua is Luna/Moon
+
+https://www.tutorialspoint.com/execute_lua_online.php
+https://www.typingclub.com/
+
+https://developer.mozilla.org/en-US/docs/MDN/Guidelines/Code_guidelines/JavaScript
 
 @@@@
 
