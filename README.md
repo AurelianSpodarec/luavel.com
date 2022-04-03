@@ -61,42 +61,100 @@ Lua Documentation (you are here)
 Editors Note: Table of content should be created first for a better clarity how to structure the docs
 ===========================================================================
 
-# References
+
+Maybe have a LIST of ALL functions, data types etc... categorized just by that - a refference of everything. 
 
 
-## BUilt in objects
-Tables
+# Reference
+
+## Functions
+`next()` (table only function)
+`getmetatable()` (object) - what's an object anyway, a table? I guess...
+`setmetatable()`(table only)
+`rawset()`  (table only)
+`rawget()` (table only function)
+`rawlen()` (table/string - returns length)
+`rawequal()` (?)
+`pairs()` (table only function)
+`ipairs()`(table only function)
+
+<!-- Should go to Error Handling section of the documentation -->
+`assert()`
+`warn()`
+`error()`
+`pcall()`
+`xpcall()`
+<!-- Other -->
+`print()`
+`select()`
+`tonumber()`
+`tostring()`
+`type()`
+<!-- Look at node docs where they put this -->
+`load()`
+`loadfile()`
+`dofile()`
+<!-- ? -->
+`collectgarbage()`
 
 ## Statements & declarations
- and       break     do        else      elseif
-     end       false     for       function  if
-     in        local     nil       not       or
-     repeat    return    then      true      until     while
-     function
+and
+break
+do
+else
+elseif
+end
+false     
+for ... do 
+function  
+if ... then
+in
+local     
+nil       
+not       
+or
+repeat    
+return    
+then      
+true      
+until     
+while
 
+
+## Libraries
+### Math
+### String
+### Operating System Facilities (OS)
+### Coroutine
+
+
+
+
+And then have specific Guide that's more detailed
+
+
+-=-=
+
+
+## [String](#doc_string)
+## [Math](#doc_math)
+## [Operators](#doc_operators)
+
+
+
+ 
           +     -     *     /     %     ^     #
      ==    ~=    <=    >=    <     >     =
      (     )     {     }     [     ]
      ;     :     ,     .     ..    ...
 
 
-
-## Functions
+ 
 ## Tables
 ## Erros
 ## Modulos
 
 
-
-There are eight basic types in Lua: 
-nil
-boolean
-number 
-string
-function
-userdata 
-thread
-table
 <!-- 
 
 # Table of Contents
@@ -114,11 +172,7 @@ table
 ## Operators
 ## Iterations
 
-## Libraries
-### Math
-### String
-### Operating System Facilities (OS)
-### Coroutine -->
+
 
  
 
@@ -165,13 +219,12 @@ table
 
 
 
-
-
 # Table of Contents
 
 ## 
-### [String](#doc_string)
-### [Math](#doc_math)
+
+
+
 ### [Table](#doc_table)
 ### [Metatable](#doc_metatable)
 
@@ -205,29 +258,6 @@ table
 ### [nil]()
 
 
-## [Operators]
-
-### [Arithmetic Operators]
-#### [Addition +]
-#### [Subtraction -]
-#### [Multiplication *]
-#### [Division /]
-#### [Modulo %]
-#### [Exponentiation ^]
-#### [Negation (Unary-)]
-
-### [Logical Operators]
-#### [not]
-#### [or]
-#### [and]
-
-### [Relational Operators]
-    ==
-    ~=
-    <
-    >
-    <=
-    >=
 
 
 
@@ -235,7 +265,30 @@ table
 
 
 
+# <a name="doc_perators">Operators</a>
 
+## Arithmetic Operators
+
+Addition +
+Subtraction -
+Multiplication *
+Division /
+Modulo %
+Exponentiation ^
+Negation (Unary-)
+
+## Logical Operators
+not
+or
+and
+
+## Relational Operators
+==
+~=
+<
+>
+<=
+>=
 
 
 
@@ -243,7 +296,7 @@ table
 ===========================================================================
 
 
-# <a name="string">String</a>
+# <a name="doc_string">String</a>
 
 ## Methods
 
@@ -269,17 +322,17 @@ table
 ===========================================================================
 
 
-# <a name="math">Math</a>
+# <a name="doc_math">Math</a>
 
 ## Methods
 `Math.modf()`
 `Math.floor()`
 `Math.max()`
 `Math.celi()`
-`select()`
 
 
-# <a name="modules">Modules</a>
+
+# <a name="doc_modules">Modules</a>
 
 ## Methods
 `require()`
@@ -297,37 +350,49 @@ table
 # <a name="functions">Functions</a>
 
 ## Methods
-`next()`
-`getmetatable()`
-`setmetatable()`
-`rawset()`
-`rawget()`
-`rawlen()`
-`rawequal()`
 
-`pairs()`
-`ipairs()`
+<!-- Tables function - should go under table as functions... -->
+`next()` (table only function)
+`getmetatable()` (object) - what's an object anyway, a table? I guess...
+`setmetatable()`(table only)
+`rawset()`  (table only)
+`rawget()` (table only function)
+`rawlen()` (table/string - returns length)
+`rawequal()` (?)
 
+`pairs()` (table only function)
+`ipairs()`(table only function)
+
+<!-- Should go to Error Handling section of the documentation -->
 `assert()`
-`print()`
 `warn()`
 `error()`
-
-`tonumber()`
-`tostring()`
-`type()`
-
-`load()`
-`loadfile()`
-`dofile()`
 
 `pcall()`
 `xpcall()`
 
+
+<!-- Other -->
+`print()`
+
+`select()`
+`tonumber()`
+`tostring()`
+`type()`
+
+<!-- Look at node docs where they put this -->
+`load()`
+`loadfile()`
+`dofile()`
+
+
+<!-- ? -->
 `collectgarbage()`
 
 
 
+Metatable
+Metamethod
 
 
 
@@ -436,6 +501,17 @@ To get a table values you need to loop over them. Check out `pairs` and `ipairs.
 ### Constructor 
 `{}` Creates a new `table`.
 
+
+### Functions
+[`next()`](#table_function_next) (table only function)
+[`getmetatable()`](#table_function_getmetatable) (object) - what's an object anyway, a table? I guess...
+[`setmetatable()`](#table_function_setmetatable)  (table only)
+[`rawset()`](#table_function_rawset)  (table only)
+[`rawget()`](#table_function_rawget)  (table only function)
+[`rawlen()`](#table_function_rawlen)  (table/string - returns length)
+[`rawequal()`](#table_function_rawequal)  (???? rawequal(v1, v2) wtf is that)
+[`pairs()`](#table_function_pairs)  (table only function)
+[`ipairs()`](#table_function_ipairs)  (table only function)
 
 ### Methods
 
