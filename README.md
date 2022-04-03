@@ -1,20 +1,21 @@
-# lua Documentation - Unofficial  🌙 
+# Lua Documentation - Unofficial  🌙 
 * Note: This is WIP
 
-# [lua](https://lua.org)
-##What is lua?
-[lua](https://www.lua.org/about.html) is a powerful, efficient, lightweight, embeddable scripting language. It supports procedural programming, object-oriented programming, functional programming, data-driven programming, and data description.
+# [Lua](https://lua.org)
 
-lua combines simple procedural syntax with powerful data description constructs based on associative arrays and extensible semantics.
-lua is dynamically typed, runs by interpreting bytecode with a register-based virtual machine, and has automatic memory management with incremental garbage collection, making it ideal for configuration, scripting, and rapid prototyping.
+## What is Lua?
+[Lua](https://www.lua.org/about.html) is a powerful, efficient, lightweight, embeddable scripting language. It supports procedural programming, object-oriented programming, functional programming, data-driven programming, and data description.
+
+Lua combines simple procedural syntax with powerful data description constructs based on associative arrays and extensible semantics.
+Lua is dynamically typed, runs by interpreting bytecode with a register-based virtual machine, and has automatic memory management with incremental garbage collection, making it ideal for configuration, scripting, and rapid prototyping.
 
 
 
-## Who is lua for?
+## Who is Lua for?
 
 Like with any language, choose the right tool for the job. 
 
-lua is rarerly used on its own, instead its usually embedded in other programs. 
+Lua is rarerly used on its own, instead its usually embedded in other programs. 
 
 Notable mentions: Roblox, Adobe Photoshop Lightroom, Angry Birds, Cheat Engine, and Garry's Mod.
 
@@ -23,23 +24,23 @@ Its very popular in the gaming industry but also its been used in network and sy
 
 
 
-## History of lua
+## History of Lua
 
-lua was desinged by a team of of three Brazililian scientist, Roberto Ierusalimschy, Luiz Henrique de Figueiredo, and Waldemar Celes.
+Lua was desinged by a team of of three Brazililian scientist, Roberto Ierusalimschy, Luiz Henrique de Figueiredo, and Waldemar Celes.
 
-Brazil had a very strict import policy from 1984 untill 1992, which also included hardware. Due to the hardware limitations in Brazil, the three scientist developed the scripting language called lua.
+Brazil had a very strict import policy from 1984 untill 1992, which also included hardware. Due to the hardware limitations in Brazil, the three scientist developed the scripting language called Lua.
 
 The first release was in 1993.
 
 The origin of the name  and name comes from the word `luna` which is Brazilian way of saying `moon`.
 
-lua was slightly different and incomprated the data-description suntax of SOL, and `SOL` in Portugese means `Sun` and `lua` meaning `Moon`.
+Lua was slightly different and incomprated the data-description suntax of SOL, and `SOL` in Portugese means `Sun` and `Lua` meaning `Moon`.
 
-lua was born.
+Lua was born.
 
 # Discord Server
 
-Join lua Community server on discord! https://discord.gg/nNu6FeHC
+Join Lua Community server on discord! https://discord.gg/nNu6FeHC
 
 
 ===========================================================================
@@ -47,29 +48,59 @@ Join lua Community server on discord! https://discord.gg/nNu6FeHC
 
 # Table of Contents
 ### [Tables](#doc_table)
-### [Math](#math)
-### [String](#string)
+### [Math](#doc_math)
+### [String](#doc_string)
 
-## [Select](#selet)
+## [Select](#doc_selet)
 
 
 ===========================================================================
 
 
 ## <a name="doc_table">Tables</a>
-A table allows storing a collection of data under a single variable. lua has one mechanism to represent data structure, and does not have Classes, Arrays or Objects. Every data structure is represented by tables.
+A table allows storing a collection of data under a single variable. Lua has one mechanism to represent data structure, and does not have Classes, Arrays or Objects. Every data structure is represented by tables.
 
 
 The index starts at 1 instead of 0.
 
 Looping over tables uses pairs and ipairs.
 
-Tables can be treated as an array of objects(`{"array","of","objects"}`) or an object(`{name="John",age=25,isMarried:false}`)
 
+### Common Usages
 
+Tables can represent classes, arrays and objects.
+
+#### Reasemblance of a Class, or prototyping
+```lua
+local Class = {}
+
+function Class.makeSound(sound)
+    return sound
+end
+
+function Class. 
+
+print(Class.makeSound("Woof!"))
+
+-- Output: Woof
+```
+
+#### Reasemblance of an Array
+```lua 
+local array = { "Dog", "Cat", "Hippo" }`)
+``` 
+
+#### Reasemblance of an Object
+```lua
+local object = { 
+    name = "John", 
+    age = 25, 
+    isMarried: false
+}
+```
 
 ```
-Note: When trying to print a table it will return you the table's hash instead of the values such as: "table: 0x5566951939f0"
+Note: Printing a table will return table's hash such as `table: 0x5566951939f0`
 ```
 
 ### Constructor 
@@ -80,21 +111,22 @@ Creates a new `table`.
 
 ### Methods
 
-[`table.insert()`](#table-insert) 
+[`table.insert()`](#table-insert)  
 Adds one element to the table.
 
-[`table.remove()`](#table-remove) 
+[`table.remove()`](#table-remove)  
 Removes one element from the table.
 
-[`table.pack()`](#table-pack) 
+[`table.pack()`](#table-pack)  
+Packs elements into a new table.
 
-[`table.unpack()`](#table-unpack) 
+[`table.unpack()`](#table-unpack)  
 Unpacks a table into values.
 
-[`table.concat()`](#table-concat) 
+[`table.concat()`](#table-concat)  
 Returns a combined string from a table.
 
-[`table.sort()`](#table-sort) 
+[`table.sort()`](#table-sort)  
 Sorts the values in a table.
 
 
@@ -107,7 +139,7 @@ Sorts the values in a table.
 The `table.insert()` method adds one element to the end of the table.
 
 ## Syntax
-```lua
+```Lua
 table.insert(tbl, value)
 ```
 
@@ -123,7 +155,7 @@ The element to add to the end of the table.
 
 ### Adding elements to a table
 
-```lua
+```Lua
 
 local groceries = { "Bread", "Rice" }
 table.insert(groceries, "Potatoes")
@@ -143,7 +175,7 @@ The `table.remove()` method removes one element from the table and shifts it.
 
 
 ## Syntax
-```lua
+```Lua
 table.remove(tbl, index)
 ```
 
@@ -155,9 +187,9 @@ The table where the item should be removed from.
 The index (position) of the current element in the array.
 
 ## Examples
- Removing "Bread" from groceries table.
+ Removing "Rice" from groceries table.
 
-```lua
+```Lua
 groceries = { "Bread", "Rice", "Peas" }
 table.remove(groceries, 2)
 
@@ -173,12 +205,12 @@ table.remove(groceries, 2)
 The `table.concat()` function is used to concatinate table values into a string.
 
 ## Syntax
-```lua
-table.concat(yourTable, seperator)
+```Lua
+table.concat(tbl, seperator)
 ```
 
 ## Parameter
-`yourTable`
+`tbl`
 The table to be concatinated.
 
 `seperator (optional)`
@@ -187,7 +219,7 @@ Used as a separator between values.
 ## Examples
 
 ### Only table provided to the function.
-```lua
+```Lua
 local tbl = {"The","fox","jumps","over","the","lazy","dog",}
 
 print(table.concat(tbl)) 
@@ -195,7 +227,7 @@ print(table.concat(tbl))
 -- Output: Thefoxjumpsoverthelazydog
 ```
 
-```lua
+```Lua
 local tab = { 1, 2, 3, 4 }
 
 print(table.concat(tab)) 
@@ -205,7 +237,7 @@ print(table.concat(tab))
 
 ### Table provided with the second parameter
 
-```lua
+```Lua
 local tbl = {"The","fox","jumps","over","the","lazy","dog",}
 
 print(table.concat(tbl," ")) 
@@ -213,10 +245,10 @@ print(table.concat(tbl," "))
 -- Output: The fox jumps over the lazy dog
 ```
 
-```lua
-local yourTable = { 1, 2, 3, 4 }
+```Lua
+local tbl = { 1, 2, 3, 4 }
 
-print(table.concat(yourTable, "-")) 
+print(table.concat(tbl, "-")) 
 
 -- Output: 1-2-3-4
 ```
@@ -239,7 +271,7 @@ The values to combine into a newly created table
 ## Examples
 
 This will combine all values into a new table.
-```lua
+```Lua
 productID =  234 
 productName = "Dark Chocolate"
 productIngredients = { "Cocoa Mass", "Cocoa Butter", "Vanilla", "Cocoa Solids: 70% min" }
@@ -253,7 +285,7 @@ darkChocolateTable = table.pack(productID, productName, productIngredients)
  
  Accessing the product igredients and getting the second one.
 
- ```lua
+ ```Lua
 productID =  234 
 productName = "Dark Chocolate"
 productIngredients = { "Cocoa Mass", "Cocoa Butter", "Vanilla", "Cocoa Solids: 70% min" }
@@ -277,18 +309,18 @@ The `table.unpack()` returns all values from a table.
 
 ## Syntax
 
-```lua
-table.unpack(yourTable)
+```Lua
+table.unpack(tbl)
 ```
 
 ## Parameters
-`yourTable`
+`tbl`
 The table to be unpacked.
 
 ## Examples
 
 Unpacking a table
-```lua
+```Lua
 groceries = { "Bread", "Rice", "Peas" }
 print(table.unpack(groceries))
 
@@ -296,7 +328,7 @@ print(table.unpack(groceries))
 ```
 
 Unpacking a table with tables inside
-```lua
+```Lua
 groceries = {
     {
         id = 31,
@@ -332,10 +364,10 @@ The `table.sort()` sorts a table and returns its value sorted. If no value is pr
 
 
 ## Syntax
-```lua
-table.sort(yourTable)
+```Lua
+table.sort(tbl)
 
-table.sort(yourTable, value)
+table.sort(tbl, value)
 ```
 
 ## Parameters
@@ -387,13 +419,13 @@ table.sort(yourTable, value)
 
 ## Single line comments
 
-```lua
+```Lua
 -- 
 ```
 
 ## Multi-line comments
 
-```lua
+```Lua
 --[[
     
 
@@ -415,7 +447,7 @@ table.clear()
 
 
 ## JSON
-link to JSON decoder - http://dkolf.de/src/dkjson-lua.fsl/home
+link to JSON decoder - http://dkolf.de/src/dkjson-Lua.fsl/home
 
 
 ----------------------------------
@@ -487,7 +519,7 @@ groceries <const>
 
 Moon theme, because Lua is Luna/Moon
 
-https://www.tutorialspoint.com/execute_lua_online.php
+https://www.tutorialspoint.com/execute_Lua_online.php
 https://www.typingclub.com/
 
 https://developer.mozilla.org/en-US/docs/MDN/Guidelines/Code_guidelines/JavaScript
@@ -502,7 +534,7 @@ Lua com
 Lua is a dynamic language, not type anotations needed
 
 
-https://luarocks.org/
+https://Luarocks.org/
 
 
 If you're comning from a language such as JavaScript or PHP, some differences are worth noting
@@ -577,7 +609,7 @@ Use real life examples, not some foo bar, a, e, i...
 
 # Tables AKA Objects/Arrays
 
-You can follow along and compile lua online without downloading it: https://replit.com/languages/lua
+You can follow along and compile Lua online without downloading it: https://replit.com/languages/Lua
 
 Official Download site for Lua:
 
@@ -585,7 +617,7 @@ Official Download site for Lua:
 
   1. [Types](#types)
 
-   ```lua
+   ```Lua
     -- bad
     woof
 
@@ -596,7 +628,7 @@ Official Download site for Lua:
 
     **[[⬆]](#TOC)**
 
-    https://stackoverflow.com/questions/41942289/display-contents-of-tables-in-lua
+    https://stackoverflow.com/questions/41942289/display-contents-of-tables-in-Lua
 
 ## <a name='types'>Types</a>
 JS Example
@@ -620,7 +652,7 @@ if you want to you can also
 # Tables aka Objects & Arrays
 
 Lua doesn't have objects nor arrays - it has just tables. s
-Tables in luas is Arr
+Tables in Luas is Arr
 Objects in Lua are called Tables. 
 Objects in Lua are called Arrays.They serve as an array and object.
 
@@ -776,7 +808,7 @@ groceries = {}
 groceries <const> = {}
 
 
-https://stackoverflow.com/questions/4880368/how-to-delete-all-elements-in-a-lua-table
+https://stackoverflow.com/questions/4880368/how-to-delete-all-elements-in-a-Lua-table
 # Statements and declerations
 
 
@@ -815,9 +847,9 @@ Explanation about the feature
 
 
 
-<!-- http://lua-users.org/wiki/TablesTutorial -->
+<!-- http://Lua-users.org/wiki/TablesTutorial -->
 <!-- https://developer.roblox.com/en-us/articles/Metatables -->
-<!-- https://www.lua.org/pil/19.2.html -->
+<!-- https://www.Lua.org/pil/19.2.html -->
 
 
 </details>
