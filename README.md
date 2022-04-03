@@ -1,65 +1,102 @@
-### In Progress (needs to be verified)
+### In Progress
 # Lua Unofficial Documentation
 
 
-If you're comning from a language such as JavaScript or PHP, some differences are worth noting
-```
-Count starts from 1 not 0
-0 does not mean false
-1 does not mean true
-```
+# Lua
+What is Lua?
+
+## Who is Lua for?
+
+Lua is rarery use on its own, isntead its often embeded in other programs. 
+
+Notable mentioens, Roblox, Adobe Photoshop Lightroom, Angry Birds, Cheat Engine, 
 
 
-# References (Alphabetic order)
-## [Tables <small>AKA Array/Object</small>](#table)
+Its very popular in the gaming industry but also its been used in network and system programs. 
+
+Modding
+Feature Enhancement notable games Minecraft
+
+Compact
+Fast in execution
+Highly extendable
+Easy to learn
+Free to use
+
+## History of Luna
+
+Lua was desinged by a team of of three Brazililian scientist, Roberto Ierusalimschy, Luiz Henrique de Figueiredo, and Waldemar Celes. The first Lua release was in 1993.
+
+Brazil had a very stric import policy from 1984 untill 1992, which also included hardware.  Due to the hardware limitations in Brazil, the three scientist developed the scripting language, Lua.
+
+The name comes from the world `luna` which is Brazilian way of saying `moon`.
+
+
+===========================================================================
+
+
+# References v
+## [Tables AKA Array/Object](#table)
+## [Select]
+## [Math]
+## [String]
 
 
 ===========================================================================
 
 
 ## <a name="table">Tables</a> <small>AKA Array/Object</small>
-The 'table' allows storing a collection of data under a single variable.
+The 'table' allows storing a collection of data under a single variable. Lua has one mechanism to represent data structure, and does not contain `classes`, `arrays` and `objects`. Every data structure is reprresented by `table`.
+
+The index starts at 1 instead of 0.
+
+Table is an associative array
+
+looping over tables `pairs` and `ipairs`
+
 
 ```
-Note:
-When trying to print a table it will return you a table hash instead of the values such as: 0xd7b140
-```
-
-```
+Note: When trying to print a table it will return you a table hash instead of the values such as: 0xd7b140
 Note: The `table` object in other langauges woud be reffered as array/object
 ```
 
 ### Constructor 
 `{}`
-Creates a new `table` object(?).
+Creates a new `table`.
 
 ### Properties
 
 ### Methods
 
-[`table.insert()`](#table.insert)
+[`table.insert()`](#table-insert)
 Adds one element to the table.
 
-[`table.remove()`](#table.remove)
-Removed one element from the table.
+[`table.remove()`](#table-remove)
+Removes one element from the table.
 
-[`table.concat()`](#table.concat)
-Returns a new table that is the calling table with other table(s).
+[`table.concat()`](#table-concat)
+Returns a new table that is the calling table with other table(s). (???)
 
-[`table.unpack()`](#table.unpack)
+[`table.unpack()`](#table-unpack)
 Unpacks a table into values.
+
+[`table.sort()`](#table-sort)
+
 
 
 ===========================================================================
 
 
-# <a name="table.insert">Table.insert()</a>
-The `table.insert()` method adds one element to the start/start(?) of the table.
+# <a name="table-insert">Table.insert()</a>
+The `table.insert()` method adds one element to the start/end(?) of the table.
 
 ## Syntax
 ```lua
-    table.insert(yourTable, value)
+table.insert(yourTable, value)
 ```
+
+## Parameter
+
 
 ## Examples
 
@@ -67,22 +104,25 @@ The `table.insert()` method adds one element to the start/start(?) of the table.
 
 ```lua
 
-    groceries = { "Bread", "Rice"}
-    table.insert(groceries, "Potatoes")
+groceries = { "Bread", "Rice"}
+table.insert(groceries, "Potatoes")
 
-   -- Output:  groceries = {"Bread", "Rice", "Potattoes}
+-- Output:  groceries = {"Bread", "Rice", "Potattoes}
 
 ```
 
 
-# <a name="table.remove">Table.remove()</a>
+# <a name="table-remove">Table.remove()</a>
 The `table.remove` method removes one element from the table.
 
 
 ## Syntax
 ```lua
-    table.remove(yourTable, index)
+table.remove(yourTable, index)
 ```
+
+## Parameter
+
 
 ## Examples
  Removing "Bread" from groceries table.
@@ -90,38 +130,79 @@ The `table.remove` method removes one element from the table.
 This methods removed an item from table by index, and shifts the table.
 
 ```lua
-    groceries = { "Bread", "Rice"}
-    table.insert(groceries, 1)
+groceries = { "Bread", "Rice"}
+table.insert(groceries, 1)
 
-    -- Output: groceries = { "Rice" }
+-- Output: groceries = { "Rice" }
 ```
 
 Removing a value without shifting
 
 ```lua
-    groceries = { "Bread", "Rice"}
-    groceries[1] = nil
+groceries = { "Bread", "Rice"}
+groceries[1] = nil
 
-    -- Output: groceriees = { "Rice" }
+-- Output: groceriees = { "Rice" }
 ```
 
 
-# <a name="table.concat">Table.concat()</a>
+Another way to delete is to use rawset???
 
-# <a name="table.unpack">Table.unpack()</a>
+# <a name="table-concat">Table.concat()</a>
 
 
 
-## Table Plugins
+# <a name="table-unpack">Table.unpack()</a>
 
+
+
+# <a name="table-sort">Table.sort()</a>
+
+The `table.sort()` sorts a table and returns its value sorted. If no value is provited, the sort function will default to alphabetical sorting.
+
+
+## Syntax
+```lua
+table.sort(yourTable)
+
+table.sort(yourTable, value)
+```
+
+## Parameters
+
+## Examples
+
+
+
+
+
+----------------------------------
+
+# Plugins
+
+## Table 
 table.clear
 
+## JSON
+link to JSON decoder - http://dkolf.de/src/dkjson-lua.fsl/home
 
 
 <details>
 
 
 <summary>.</summary>
+
+
+# Template
+
+
+# Name
+Description what it does
+
+## Syntax
+## Parameters
+## Examples
+
 
 notes
 .
@@ -132,22 +213,12 @@ notes
 .
 .
 
-# Other
-## class
-## function
-## const
-
-## for ... do
-## whilte ... do
-## pairs
-## ipairs
-## next
-## rawset
-## count
-
-## return
 
 
+
+
+# I miss
+## CLasses
 
 
 
@@ -156,6 +227,81 @@ notes
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+
+@@@@
+
+Lua com
+
+21 reserved words
+1 mechanism to represent data struture
+
+Lua is a dynamic language, not type anotations needed
+
+
+https://luarocks.org/
+
+
+If you're comning from a language such as JavaScript or PHP, some differences are worth noting
+```
+Count starts from 1 not 0
+0 does not mean false
+1 does not mean true
+```
+
+@@@@
+
+
+coroutine.create() - suspend and resume code
+coroutine.yeld() - puse
+courutine.resume() - continue executoin
+
+# Reserved words
+
+and
+break
+do
+else
+elseif
+end
+false
+for ... do
+function
+if ... then
+in
+local
+nil
+not
+or
+repeat
+return
+then
+true
+until
+while .... do
+
+# Other
+## const
+ 
+## pairs
+## ipairs
+## next
+## rawset
+## count
+
+
+
+
+
+
+
+
+
+
+
 
 
 
