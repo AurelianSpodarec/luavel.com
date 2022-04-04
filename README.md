@@ -26,6 +26,10 @@
     - [Table](#global-objects_table)  
     - [Coroutine](#global-objects_coroutine)  
     - [Operating System Facilities (OS)](#global-objects_os)  
+    - [Input and Output Facilities (IO)](#global-objects_io)
+    - [UTF-8](#global-objects_utf-8)
+    - [Debug](#global-objects_debug)
+    - [Modules](#global-objects_modules)
 - **[Functions](#functions)**  
     - [Independent](#functions_table)  
     - [Table Functions](#functions_table)  
@@ -38,16 +42,21 @@
 
 
 ==========================================================================
+<!-- # Refferences
 
+# Functions
+ -->
+
+==========================================================================
 
 # [Global Objects](#global-objects)  
-&nbsp;&nbsp;[String](#global-objects_string)  
-&nbsp;&nbsp;[Math](#global-objects_math)  
-&nbsp;&nbsp;[Table](#global-objects_table)  
-&nbsp;&nbsp;[Coroutine](#global-objects_coroutine)  
-&nbsp;&nbsp;[Operating System Facilities (OS)](#global-objects_math)  
+- [String](#global-objects_string)  
+- [Math](#global-objects_math)  
+- [Table](#global-objects_table)  
+- [Coroutine](#global-objects_coroutine)  
+- [Operating System Facilities (OS)](#global-objects_math)  
 
-=======================
+-----------------------
 
 
 ## <a name="global-objects_string">String</a>  
@@ -95,20 +104,16 @@ Special characters can be encoded using escape sequences:
 [`String.unpack()`](#global-objects_string-method_unpack)  
 [`String.upper()`](#global-objects_string-method_upper)  
 
-
 **[⬆ back to top](#table-of-contents)**
 =============
 
 
 ## <a name="global-objects_math">Math</a>  
 <!-- https://www.lua.org/manual/5.4/manual.html#6.7 -->
-Math is a built-in object that has properties and methods for mathematical constants and functions. It's not a function object.
+`math` is a built-in object that has properties and methods for mathematical constants and functions. It's not a function object.
 
-`Math` works with `Numeric` type.
+`math` works with `Numeric` type.
 
-<!-- Functions with the annotation "integer/float" give integer results for integer arguments and float results for non-integer arguments. 
-
-The rounding functions `math.ceil, math.floor, and math.modf return an integer when the result fits in the range of an integer, or a float otherwise. -->
 
 ### Static properties
 [`math.pi`](#global-objects_math_static-properties_pi)  
@@ -162,6 +167,7 @@ The rounding functions `math.ceil, math.floor, and math.modf return an integer w
 
 [`math.logx(x)`](#global-objects_math_methods_log)  
 &nbsp; Returns the natural logarithm (㏒e; also, ㏑) of `x`.  
+
 [`math.log10(x)`](#global-objects_math_methods_log10)  
 &nbsp; Returns the base-10 logarithm of `x`.  
 
@@ -205,16 +211,15 @@ The rounding functions `math.ceil, math.floor, and math.modf return an integer w
 ### Example
 This section provides examples of common math operations in Lua.
 
-
 **[⬆ back to top](#table-of-contents)**
-=============
 
+=============
 
 ## <a name="global-objects_table">Table</a>
 `table` is a built in object 
 
 ### Constructor
-`{}` Creates a new `Table` object.  
+`{}` Creates a new `table` object.  
 
 
 ### Functions
@@ -228,22 +233,32 @@ This section provides examples of common math operations in Lua.
 
 ### Methods
 [`table.insert()`](#global-objects_table-method_insert)  
+&nbsp; Adds one element to the table.  
+
 [`table.remove()`](#global-objects_table-method_remove)  
+&nbsp; Removes one element from the table.  
+
 [`table.pack()`](#global-objects_table-method_pack)  
+&nbsp; Packs elements into a new table.  
+
 [`table.unpack()`](#global-objects_table-method_unpack)  
+&nbsp; Unpacks a table into values.  
+
 [`table.concat()`](#global-objects_table-method_concat)  
+&nbsp; Returns a combined string from a table.  
+
 [`table.sort()`](#global-objects_table-method_sort)  
+&nbsp; Sorts the values in a table.  
+
 [`table.move()`](#global-objects_table-method_move)  
+&nbsp; Moves elements from one table to another table and returns it.
+ 
 
 ### Example
 This section provides examples of common table operations in Lua.
 
-#### Create an table
-
-
 **[⬆ back to top](#table-of-contents)**
 =============
-
 
 ## <a name="global-objects_coroutine">Coroutine</a>  
 `coroutine` is a built in object 
@@ -261,7 +276,6 @@ This object does not contain specific functions.
 [`coroutine.running()`](#global-objects_coroutine-method_running)  
 [`coroutine.wrap()`](#global-objects_coroutine-method_wrap)  
 [`coroutine.yield()`](#global-objects_coroutine-method_yield)  
-
 
 **[⬆ back to top](#table-of-contents)**
 =============
@@ -288,24 +302,151 @@ This object does not contain specific functions.
 [`os.time()`](#global-objects_os-method_time)  
 [`os.tmpname()`](#global-objects_os-method_tmpname)  
 
+### Example
+This section provides examples of common os operations in Lua.
+
+**[⬆ back to top](#table-of-contents)**
+=============
+
+## <a name="global-objects_io">Input and Output Facilities</a>  
+`io` is a built in object that helps manipulating files.
+
+### Constructor
+
+### Functions
+This object does not contain specific functions.
+
+### Methods
+
+[`io.close()`](#global-objects_io-method_close)  
+[`io.flush()`](#global-objects_io-method_flush)  
+[`io.input()`](#global-objects_io-method_input)  
+[`io.lines()`](#global-objects_io-method_lines)  
+[`io.open()`](#global-objects_io-method_open)  
+[`io.output()`](#global-objects_io-method_output)  
+[`io.popen()`](#global-objects_io-method_popen)  
+[`io.read()`](#global-objects_io-method_read)  
+[`io.stderr()`](#global-objects_io-method_stderr)  
+[`io.stdin()`](#global-objects_io-method_stdin)  
+[`io.stdout()`](#global-objects_io-method_stdout)  
+[`io.tmpfile()`](#global-objects_io-method_tmpfile)  
+[`io.type()`](#global-objects_io-method_type)  
+[`io.write()`](#global-objects_io-method_write)  
 
 ### Example
 This section provides examples of common os operations in Lua.
 
+**[⬆ back to top](#table-of-contents)**
+=============
+
+## <a name="global-objects_utf-8">UTF 8</a>  
+`utf8` is a built in object that provides basic support for UTF-8 encoding.
+
+This library does not provide any support for Unicode other than the handling of the encoding.
+
+### Constructor
+
+### Static properties
+[`utf8.charpattern`](#global-objects_utf8-static-properties_charpattern)  
+
+### Functions
+This object does not contain specific functions.
+
+### Methods
+
+[`utf8.char`](#global-objects_utf8-method_char)  
+[`utf8.codepoint`](#global-objects_utf8-method_codepoint)  
+[`utf8.codes`](#global-objects_utf8-method_codes)  
+[`utf8.len`](#global-objects_utf8-method_len)  
+[`utf8.offset`](#global-objects_utf8-method_offset)  
+
+### Example
+This section provides examples of common os operations in Lua.
 
 **[⬆ back to top](#table-of-contents)**
+=============
+
+## <a name="global-objects_debug">Debug</a>  
+`debug` is a built in object that provides support for debuging.
+
+### Constructor
+
+### Functions
+This object does not contain specific functions.
+
+### Methods
+
+[`debug.debug`](#global-objects_debug-method_debug)  
+[`debug.gethook`](#global-objects_debug-method_gethook)  
+[`debug.getinfo`](#global-objects_debug-method_getinfo)  
+[`debug.getlocal`](#global-objects_debug-method_getlocal)  
+[`debug.getmetatable`](#global-objects_debug-method_getmetatable)  
+[`debug.getregistry`](#global-objects_debug-method_getregistry)  
+[`debug.getupvalue`](#global-objects_debug-method_getupvalue)  
+[`debug.getuservalue`](#global-objects_debug-method_getuservalue)  
+[`debug.sethook`](#global-objects_debug-method_sethook)  
+[`debug.setlocal`](#global-objects_debug-method_setlocal)  
+[`debug.setmetatable`](#global-objects_debug-method_setmetable)  
+[`debug.setupvalue`](#global-objects_debug-method_setupvalue)
+[`debug.setuservalue`](#global-objects_debug-method_setuservalue) 
+[`debug.traceback`](#global-objects_debug-method_traceback)  
+[`debug.upvalueid`](#global-objects_debug-method_upvalueid)  
+[`debug.upvaluejoin`](#global-objects_debug-method_upvaluejoin)  
+
+### Example
+This section provides examples of common os operations in Lua.
+
+**[⬆ back to top](#table-of-contents)**
+=============
+
+## <a name="global-objects_modules">Modules</a>  
+`debug` is a built in object that provides support for debuging.
+
+### Static properties
+
+[`package.config`](#global-objects_module-static-properties_config)  
+[`package.cpath`](#global-objects_module-static-properties_cpath)  
+[`package.loaded`](#global-objects_module-static-properties_loaded)  
+[`package.path`](#global-objects_module-static-properties_path)  
+[`package.preload`](#global-objects_module-static-properties_preload)  
+[`package.searchers`](#global-objects_module-static-properties_searchers)  
+
+### Functions
+[`require()`](#global-objects_module-functions_require)  
+
+### Methods
+
+[`package.loadlib()`](#global-objects_module-method_loadlib)  
+[`package.searchpath()`](#global-objects_module-method_searchpath)  
+
 ==========================================================================
 
 
-
-
-
-
-
-
-
-
 <details>
+
+
+
+IO
+
+
+[`io.close()`](#global-objects_os-method_close)  
+[`io.flush()`](#global-objects_os-method_flush)  
+[`io.lines()`](#global-objects_os-method_lines)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 # Lua Documentation - Unofficial  🌙 
 * Note: This is Work in progress
 
