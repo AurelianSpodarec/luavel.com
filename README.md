@@ -53,6 +53,12 @@
 ==========================================================================
 # <a name="staatements-and-declarations">Statements & Declarations</a>  
 [local]  
+[<const>]  
+[break]  
+[if ... then]  
+[for ... do]  
+[while .... do]  
+[local]  
 [do]  
 [else]  
 [elseif]  
@@ -727,14 +733,7 @@ Join Lua Community server on discord! https://discord.gg/nNu6FeHC
 # <a name="doc_statements_and_declarations">Statements & declarations<a>
 
 ## Declaration
-### [variable?]
-### [<const>]
-## Control Flow
-### [break]()
-## Iterations
-### [if ... then]()
-### [for ... do]()
-### [while .... do]()
+
 
  
 
