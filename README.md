@@ -26,7 +26,7 @@
     - [Table](#global-objects_table)  
     - [Coroutine](#global-objects_coroutine)  
     - [Operating System Facilities (OS)](#global-objects_os)  
-    - [Input and Output Facilities (IO)](#global-objects_io)
+    - [Input and Output Facilities (IO)](#global-objects_io)  
     - [UTF-8](#global-objects_utf-8)
     - [Debug](#global-objects_debug)
     - [Modules](#global-objects_modules)
@@ -34,18 +34,54 @@
     - [Independent](#functions_table)  
     - [Table Functions](#functions_table)  
     - [Files](#functions_table)  
-    - [FIle Loaading Functions](#functions_table)  
-    - [Error Handling Functions](#functions_table)  
+    - [Error Handling](#functions_table)  
 - **[Expressions & Operators](#expressions-and-operators)**  
 - **[Statements & Declarations](#staatements-and-declarations)**  
 
 
 
 ==========================================================================
-<!-- # Refferences
+# [Functions](#functions)  
+- [Independent](#functions_independent)  
+- [Table Functions ](#functions_table)  
+- [Files](#functions_files)  
+- [Error Handling](#functions_error-handling)  
 
-# Functions
- -->
+-----------------------
+
+## <a name="functions_independent">Independent</a>  
+[`print`]('functions_print)  
+[`type`]('functions_type)  
+[`tonumber`]('functions_tonumber)  
+[`tostring`]('functions_tostring)  
+[`rawlen`]('functions_rawlen)  
+[`select`]('functions_select)  
+[`collectgarbage`]('functions_collectgarbage)  
+
+## <a name="functions_table">Table Functions</a>  
+[`next`]('functions_next)  
+[`pairs`]('functions_pairs)  
+[`ipairs`]('functions_ipars)  
+[`rawset`]('functions_rawset)  
+[`rawget`]('functions_rawget)  
+[`rawequal`]('functions_rawequal)  
+[`setmetatable`]('functions_setmetable)  
+[`getmetatable`]('functions_getmetable)  
+
+## <a name="functions_files">Files</a>  
+[`require`]('functions_require)  
+[`dofile`]('functions_dofile)  
+[`load`]('functions_load)  
+[`loadfile`]('functions_loadfile)  
+
+## <a name="functions_error-handling">Error Handling</a>  
+[`pcall`]('functions_pcall)  
+[`error`]('functions_error)  
+[`xpcall`]('functions_xpcall)  
+[`assert`]('functions_assert)  
+
+
+**[⬆ back to top](#table-of-contents)**
 
 ==========================================================================
 
@@ -212,7 +248,6 @@ Special characters can be encoded using escape sequences:
 This section provides examples of common math operations in Lua.
 
 **[⬆ back to top](#table-of-contents)**
-
 =============
 
 ## <a name="global-objects_table">Table</a>
@@ -419,6 +454,8 @@ This section provides examples of common os operations in Lua.
 [`package.loadlib()`](#global-objects_module-method_loadlib)  
 [`package.searchpath()`](#global-objects_module-method_searchpath)  
 
+
+**[⬆ back to top](#table-of-contents)**
 ==========================================================================
 
 
