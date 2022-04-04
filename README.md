@@ -37,48 +37,49 @@ The `String` object is used to represent and manipulate a sequence of characters
 
 Special characters can be encoded using escape sequences:
 
-| Escape Sequence | Use |
-| --- | --- |
-| \a | Bell|
-| \b | Backspace |
+| Escape Sequence | Use                   |
+| --------------- | --------------------- |
+| \b              | Backspace             |
+| \f              | Formfeed              |
+| \n              | New line              |
+| \r              | Carriage return       |
+| \t              | Tab                   |
+| \v              | Vertical tab          |
+| \\              | Backslash             |
+| \"              | Double quotes         |
+| \'              | Single quotes         |
+| \[              | Left square bracket   |
+| \]              | Right square bracket  |
 
 
 
  <!-- Escape Sequence	Use
 \a	Bell
 \b	Backspace
-\f	Formfeed
-\n	New line
-\r	Carriage return
-\t	Tab
-\v	Vertical tab
-\\	Backslash
-\"	Double quotes
-\'	Single quotes
-\[	Left square bracket
-\]	Right square bracket -->
+
 
 ### Functions
-[`tostring()`]() <!-- Editor: Should this be here? --!>
+[`tostring()`]
+ <!-- Editor: Should this be here? -->
 
 ### Methods
-[`String.byte()`](#global-objects_string-method_byte)
-[`String.char()`](#global-objects_string-method_char)
-[`String.dump()`](#global-objects_string-method_dump)
-[`String.find()`](#global-objects_string-method_find)
-[`String.format()`](#global-objects_string-method_format)
-[`String.gmatch()`](#global-objects_string-method_gmatch)
-[`String.gsub()`](#global-objects_string-method_gsub)
-[`String.len()`](#global-objects_string-method_len)
-[`String.lower()`](#global-objects_string-method_lower)
-[`String.match()`](#global-objects_string-method_match)
-[`String.pack()`](#global-objects_string-method_pack)
-[`String.packsize()`](#global-objects_string-method_packsize)
-[`String.rep()`](#global-objects_string-method_rep)
-[`String.reverse()`](#global-objects_string-method_reverse)
-[`String.sub()`](#global-objects_string-method_sub)
-[`String.unpack()`](#global-objects_string-method_unpack)
-[`String.upper()](#global-objects_string-method_upper)
+[`String.byte()`](#global-objects_string-method_byte)  
+[`String.char()`](#global-objects_string-method_char)  
+[`String.dump()`](#global-objects_string-method_dump)  
+[`String.find()`](#global-objects_string-method_find)  
+[`String.format()`](#global-objects_string-method_format)  
+[`String.gmatch()`](#global-objects_string-method_gmatch)  
+[`String.gsub()`](#global-objects_string-method_gsub)  
+[`String.len()`](#global-objects_string-method_len)  
+[`String.lower()`](#global-objects_string-method_lower)  
+[`String.match()`](#global-objects_string-method_match)  
+[`String.pack()`](#global-objects_string-method_pack)  
+[`String.packsize()`](#global-objects_string-method_packsize)  
+[`String.rep()`](#global-objects_string-method_rep)  
+[`String.reverse()`](#global-objects_string-method_reverse)  
+[`String.sub()`](#global-objects_string-method_sub)  
+[`String.unpack()`](#global-objects_string-method_unpack)  
+[`String.upper()`](#global-objects_string-method_upper)  
 
 
 =============
@@ -126,7 +127,7 @@ This section provides examples of common table operations in Lua.
 
 
 ## <a name="global-objects_coroutine">Coroutine</a>  
-Description
+`Coroutine` is a built in object 
 
 ### Constructor
 `coroutine.create()` Creates a new `Coroutine` object.
