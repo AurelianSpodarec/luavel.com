@@ -30,13 +30,42 @@
 
 -----------------------
 
-
+[`Addition +`]  
+[`Subtraction -`]  
+[`Multiplication *`]  
+[`Division /`]  
+[`Modulo %`]  
+[`Exponentiation ^`]  
+[`Negation (Unary-)`]  
+[`Relational Operators`]  
+[`and`]  
+[`or`]  
+[`not`]  
+[`<`]  
+[`>`]  
+[`<=`]  
+[`>=`]  
+[`==`]   
+[`~=`]  
 
 
 
 ==========================================================================
 # <a name="staatements-and-declarations">Statements & Declarations</a>  
-
+[local]  
+[do]  
+[else]  
+[elseif]  
+[function]  
+[end]  
+[in]  
+[repeat]  
+[then]  
+[until]  
+[true]  
+[false]  
+[return]  
+[nil]  
 -----------------------
 
 
@@ -692,31 +721,7 @@ Join Lua Community server on discord! https://discord.gg/nNu6FeHC
 
 
 
-
-
-
  
- 
-
-<!-- 
-<!-- 
-
-# Table of Contents
-
-## Variables
-## Baisc Types
-### Nil
-### Boolean
-### Number
-### String
-### Function
-### Userdata
-### Thread
-### Table
-## Operators
-## Iterations
-
--- > -->
 
  
 # <a name="doc_statements_and_declarations">Statements & declarations<a>
@@ -747,19 +752,15 @@ Join Lua Community server on discord! https://discord.gg/nNu6FeHC
 
 ## [Statements]
 ### [local]()
-
-
 ### [do]()
 ### [else]()
 ### [elseif]()
 ### [function]()
 ### [end]()
-
 ### [in]()
 ### [repeat]()
 ### [then]()
 ### [until]()
-
 ### [true]()
 ### [false]()
 ### [return]()
@@ -772,17 +773,7 @@ Join Lua Community server on discord! https://discord.gg/nNu6FeHC
 
 # <a name="doc_operators">Operators</a>
 
-## Arithmetic Operators
 
-Addition +
-Subtraction -
-Multiplication *
-Division /
-Modulo %
-Exponentiation ^
-Negation (Unary-)
-
-Relational Operators
  
 
 ## Logical Operators
