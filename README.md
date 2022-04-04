@@ -23,10 +23,10 @@ Enviroment Variables
       - [Modules](#global-objects_modules)
   - **[Expressions & Operators](#expressions-and-operators)**  
   - **[Statements & Declarations](#staatements-and-declarations)**  
-- **C API**
-- **Auxiliary Library**
 - **Metamethods**
 - **Enviroment Variables**
+- **C API**
+- **Auxiliary Library**
 
 <!-- - **[Functions](#functions)**  
     - [Independent](#functions_table)  
@@ -300,8 +300,97 @@ This section provides examples of common math operations in Lua.
 &nbsp; Moves elements from one table to another table and returns it.
  
 
-### Example
+### Examples
 This section provides examples of common table operations in Lua.
+
+#### Create a table
+
+#### Access an table item by its index
+```lua
+local groceries = {
+    {
+        id = 3421,
+        name = "Dark Chocolate",
+        price = "$1.99"
+    },
+    {
+        id = 4843,
+        name = "Lemon",
+        price = "$0.69"
+    },
+    {
+        id = 2903,
+        name = "Blender",
+        price = "$42.00"
+    }
+    
+}
+
+print(groceries[3].name)
+
+-- Expecetd Output: Blender
+```
+
+#### Display values of a table
+```lua
+local groceries = {
+    {
+        id = 3421,
+        name = "Dark Chocolate",
+        price = "$1.99"
+    },
+    {
+        id = 4843,
+        name = "Lemon",
+        price = "$0.69"
+    },
+    {
+        id = 2903,
+        name = "Blender",
+        price = "$42.00"
+    }
+}
+
+for index, data in ipairs(groceries) do
+    print(index)
+
+    for key, value in pairs(data) do
+        print('\t', key, value)
+    end
+end
+
+-- Expectd output:
+-- 1
+--   name	Dark Chocolate
+--   price	$1.99
+--   id	3421
+-- 2
+--   name	Lemon
+--   price	$0.69
+--   id	4843
+-- 3
+--   name	Blender
+--   price	$42.00
+--   id	2903
+```
+
+
+#### Reasemblance of a Class
+```lua
+local Class = {}
+
+function Class.makeSound(sound)
+    return sound
+end
+
+function Class.sit()
+-- code...
+end
+
+print(Class.makeSound("Woof!"))
+
+-- Output: Woof
+```
 
 
 **[⬆ back to top](#table-of-contents)**
@@ -389,18 +478,13 @@ This section provides examples of common os operations in Lua.
 **[⬆ back to top](#table-of-contents)**
 
 
-## <a name="global-objects_utf-8">UTF 8</a>  
+## <a name="global-objects_utf-8">UTF-8</a>  
 `utf8` is a built in object that provides basic support for UTF-8 encoding.
 
 This library does not provide any support for Unicode other than the handling of the encoding.
 
-### Constructor
-
 ### Static properties
 [`utf8.charpattern`](#global-objects_utf8-static-properties_charpattern)  
-
-### Functions
-This object does not contain specific functions.
 
 ### Methods
 
@@ -422,27 +506,24 @@ This section provides examples of common os operations in Lua.
 
 ### Constructor
 
-### Functions
-This object does not contain specific functions.
-
 ### Methods
 
-[`debug.debug`](#global-objects_debug-method_debug)  
-[`debug.gethook`](#global-objects_debug-method_gethook)  
-[`debug.getinfo`](#global-objects_debug-method_getinfo)  
-[`debug.getlocal`](#global-objects_debug-method_getlocal)  
-[`debug.getmetatable`](#global-objects_debug-method_getmetatable)  
-[`debug.getregistry`](#global-objects_debug-method_getregistry)  
-[`debug.getupvalue`](#global-objects_debug-method_getupvalue)  
-[`debug.getuservalue`](#global-objects_debug-method_getuservalue)  
-[`debug.sethook`](#global-objects_debug-method_sethook)  
-[`debug.setlocal`](#global-objects_debug-method_setlocal)  
-[`debug.setmetatable`](#global-objects_debug-method_setmetable)  
-[`debug.setupvalue`](#global-objects_debug-method_setupvalue)
-[`debug.setuservalue`](#global-objects_debug-method_setuservalue) 
-[`debug.traceback`](#global-objects_debug-method_traceback)  
-[`debug.upvalueid`](#global-objects_debug-method_upvalueid)  
-[`debug.upvaluejoin`](#global-objects_debug-method_upvaluejoin)  
+[`debug.debug()`](#global-objects_debug-method_debug)  
+[`debug.gethook()`](#global-objects_debug-method_gethook)  
+[`debug.getinfo()`](#global-objects_debug-method_getinfo)  
+[`debug.getlocal()`](#global-objects_debug-method_getlocal)  
+[`debug.getmetatable()`](#global-objects_debug-method_getmetatable)  
+[`debug.getregistry()`](#global-objects_debug-method_getregistry)  
+[`debug.getupvalue()`](#global-objects_debug-method_getupvalue)  
+[`debug.getuservalue()`](#global-objects_debug-method_getuservalue)  
+[`debug.sethook()`](#global-objects_debug-method_sethook)  
+[`debug.setlocal()`](#global-objects_debug-method_setlocal)  
+[`debug.setmetatable()`](#global-objects_debug-method_setmetable)  
+[`debug.setupvalue()`](#global-objects_debug-method_setupvalue)
+[`debug.setuservalue()`](#global-objects_debug-method_setuservalue) 
+[`debug.traceback()`](#global-objects_debug-method_traceback)  
+[`debug.upvalueid()`](#global-objects_debug-method_upvalueid)  
+[`debug.upvaluejoin()`](#global-objects_debug-method_upvaluejoin)  
 
 ### Example
 This section provides examples of common os operations in Lua.
@@ -474,6 +555,7 @@ This section provides examples of common os operations in Lua.
 
 
 **[⬆ back to top](#table-of-contents)**
+
 =============================================================
 
 
@@ -906,22 +988,7 @@ Unlike in other programming languages where's the index starts from `0`, Lua sta
 
 Tables can represent classes, arrays and objects.
 
-#### Reasemblance of a Class, or prototyping
-```lua
-local Class = {}
 
-function Class.makeSound(sound)
-    return sound
-end
-
-function Class.sit()
--- code...
-end
-
-print(Class.makeSound("Woof!"))
-
--- Output: Woof
-```
 
 #### Reasemblance of an Array
 ```lua 
