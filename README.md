@@ -478,6 +478,82 @@ IO
 
 
 
+Test
+ 
+<pre><code>local dogs = { &quot;Bob&quot;, &quot;Joe&quot;}
+
+print(dogs[1])</code></pre>
+
+[Attempt This Online!](https://ato.pxeger.com/run?1=m704pzRxwYKlpSVpuhY3dXLykxNzFFLy04sVbBWqFZSc8pOUdBSUvPJTlWq5uAqKMvNKNECy0YaxmhA9UK0wIwA)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
