@@ -51,12 +51,12 @@
 ==========================================================================
 # <a name="staatements-and-declarations">Statements & Declarations</a>  
 
-[`local`](#table-of-contents)  
+<!-- [`local`](#table-of-contents)  
 [`<const>`](#table-of-contents)  
 [`break`](#table-of-contents)  
 [`if...then`](#table-of-contents)  
 [`for...do`](#table-of-contents)  
-[`while....do`](#table-of-contents)  
+[`while....do`](#table-of-contents)   -->
 [`local`](#table-of-contents)  
 [`do`](#table-of-contents)  
 [`else`](#table-of-contents)  
