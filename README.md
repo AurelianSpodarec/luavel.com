@@ -1,33 +1,51 @@
+<!-- ## Reference -->
 
-| Reference      | 
-| :---           |  
-| ## Reference|
-| ### [Global Objects](#global-objects)  |
-| [String](#global-objects_string)  |
-| [Math](#global-objects_math)  |
-| [Table](#global-objects_table)  |
-| [Coroutine](#global-objects_coroutine)  |
-| [Operating System Facilities (OS)](#global-objects_os)  |
-| ### [Functions](#functions)  |
-| [Independent](#functions_table)  |
-| [Table Functions](#functions_table)  |
-| [Files](#functions_table)  |
-| [FIle Loaading Functions](#functions_table)  |
-| [Error Handling Functions](#functions_table)  |
-| ### [Expressions & Operators](#expressions-and-operators)  |
-| ### [Statements & Declarations](#staatements-and-declarations)  |
+# Table of contents
+### [Global Objects](#global-objects)  
+[String](#global-objects_string)  
+[Math](#global-objects_math)  
+[Table](#global-objects_table)  
+[Coroutine](#global-objects_coroutine)  
+[Operating System Facilities (OS)](#global-objects_os)  
+### [Functions](#functions)  
+[Independent](#functions_table)  
+[Table Functions](#functions_table)  
+[Files](#functions_table)  
+[FIle Loaading Functions](#functions_table)  
+[Error Handling Functions](#functions_table)  
+### [Expressions & Operators](#expressions-and-operators)  
+### [Statements & Declarations](#staatements-and-declarations)  
+
+
+
+
+# Table of contents
+[Global Objects](#global-objects)  
+  [String](#global-objects_string)  
+  [Math](#global-objects_math)  
+  [Table](#global-objects_table)  
+  [Coroutine](#global-objects_coroutine)  
+  [Operating System Facilities (OS)](#global-objects_os)  
+[Functions](#functions)  
+  [Independent](#functions_table)  
+  [Table Functions](#functions_table)  
+  [Files](#functions_table)  
+  [FIle Loaading Functions](#functions_table)  
+  [Error Handling Functions](#functions_table)  
+[Expressions & Operators](#expressions-and-operators)  
+[Statements & Declarations](#staatements-and-declarations)  
 
 
 
 ==========================================================================
 
 
-# [Global Objects](#global-objects)  
-[String](#global-objects_string)  
-[Math](#global-objects_math)  
-[Table](#global-objects_table)  
-[Coroutine](#global-objects_coroutine)  
-[Operating System Facilities (OS)](#global-objects_math)  
+[Global Objects](#global-objects)  
+  [String](#global-objects_string)  
+  [Math](#global-objects_math)  
+  [Table](#global-objects_table)  
+  [Coroutine](#global-objects_coroutine)  
+  [Operating System Facilities (OS)](#global-objects_math)  
 
 =======================
 
