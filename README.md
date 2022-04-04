@@ -1,23 +1,22 @@
 ## Reference
-### [Global Objects](#global-objects)
-[String](#global-objects_string)
-[Math](#global-objects_math)
-[Table](#global-objects_table)
-[Coroutine](#global-objects_coroutine)
-[Operating System Facilities (OS)](#global-objects_os)
-### [Functions](#functions)
-[Independent](#functions_table)
-[Table Functions](#functions_table)
-[Files](#functions_table)
-[FIle Loaading Functions](#functions_table)
-[Error Handling Functions](#functions_table)
-### [Expressions & Operators](#expressions-and-operators)
-### [Statements & Declarations](#staatements-and-declarations)
+### [Global Objects](#global-objects)  
+[String](#global-objects_string)  
+[Math](#global-objects_math)  
+[Table](#global-objects_table)  
+[Coroutine](#global-objects_coroutine)  
+[Operating System Facilities (OS)](#global-objects_os)  
+### [Functions](#functions)  
+[Independent](#functions_table)  
+[Table Functions](#functions_table)  
+[Files](#functions_table)  
+[FIle Loaading Functions](#functions_table)  
+[Error Handling Functions](#functions_table)  
+### [Expressions & Operators](#expressions-and-operators)  
+### [Statements & Declarations](#staatements-and-declarations)  
 
 
 
 ==========================================================================
-
 
 
 # [Global Objects](#global-objects)  
@@ -28,43 +27,94 @@
 [Operating System Facilities (OS)](#global-objects_math)  
 
 =======================
+
+
 ## <a name="global-objects_string">String</a>  
-Description
+The `String` object is used to represent and manipulate a sequence of characters.
+
+### Escape Sequences
+### Escape sequences
+
+Special characters can be encoded using escape sequences:
+
+| Escape Sequence | Use |
+| --- | --- |
+| \a | Bell|
+| \b | Backspace |
+
+
+
+ <!-- Escape Sequence	Use
+\a	Bell
+\b	Backspace
+\f	Formfeed
+\n	New line
+\r	Carriage return
+\t	Tab
+\v	Vertical tab
+\\	Backslash
+\"	Double quotes
+\'	Single quotes
+\[	Left square bracket
+\]	Right square bracket -->
+
+### Functions
+[`tostring()`]() <!-- Editor: Should this be here? --!>
+
+### Methods
+[`String.byte()`](#global-objects_string-method_byte)
+[`String.char()`](#global-objects_string-method_char)
+[`String.dump()`](#global-objects_string-method_dump)
+[`String.find()`](#global-objects_string-method_find)
+[`String.format()`](#global-objects_string-method_format)
+[`String.gmatch()`](#global-objects_string-method_gmatch)
+[`String.gsub()`](#global-objects_string-method_gsub)
+[`String.len()`](#global-objects_string-method_len)
+[`String.lower()`](#global-objects_string-method_lower)
+[`String.match()`](#global-objects_string-method_match)
+[`String.pack()`](#global-objects_string-method_pack)
+[`String.packsize()`](#global-objects_string-method_packsize)
+[`String.rep()`](#global-objects_string-method_rep)
+[`String.reverse()`](#global-objects_string-method_reverse)
+[`String.sub()`](#global-objects_string-method_sub)
+[`String.unpack()`](#global-objects_string-method_unpack)
+[`String.upper()](#global-objects_string-method_upper)
+
+
+=============
+
 
 ## <a name="global-objects_math">Math</a>  
 Description
 
+
+=============
+
+
 ## <a name="global-objects_table">Table</a>
-Description
+`Table` is a built in object 
 
 ### Constructor
 `{}` Creates a new `Table` object.  
 
-<!-- 
-    Provide short descriptoin
-    Link to `Refferences, Functions, {$function}
- -->
-### Functions
-[`next()`]  
-[`getmetatable()`]  
-[`setmetatable()`]  
-[`rawset()`]  
-[`rawget()`]  
-[`pairs()`]  
-[`ipairs()`]  
 
-<!-- 
-    Provide short descriptoin
-    Link to `Refferences, Table, {$method}
- -->
+### Functions
+[`next()`](#reference_functions_next)  
+[`getmetatable()`](#reference_functions_getmetatable)  
+[`setmetatable()`](#reference_functions_setmetatable)  
+[`rawset()`](#reference_functions_rawset)  
+[`rawget()`](#reference_functions_rawget)  
+[`pairs()`](#reference_functions_pairs)  
+[`ipairs()`](#reference_functions_ipairs)  
+
 ### Methods
-[`table.insert()`]  
-[`table.remove()`]  
-[`table.pack()`]  
-[`table.unpack()`]  
-[`table.concat()`]  
-[`table.sort()`]  
-[`table.move()`]  
+[`Table.insert()`](#global-objects_table-method_insert)  
+[`Table.remove()`](#global-objects_table-method_remove)  
+[`Table.pack()`](#global-objects_table-method_pack)  
+[`Table.unpack()`](#global-objects_table-method_unpack)  
+[`Table.concat()`](#global-objects_table-method_concat)  
+[`Table.sort()`](#global-objects_table-method_sort)  
+[`Table.move()`](#global-objects_table-method_move)  
 
 ### Example
 This section provides examples of common table operations in Lua.
@@ -72,9 +122,29 @@ This section provides examples of common table operations in Lua.
 #### Create an table
 
 
+=============
+
 
 ## <a name="global-objects_coroutine">Coroutine</a>  
 Description
+
+### Constructor
+`coroutine.create()` Creates a new `Coroutine` object.
+
+### Functions
+This object does not contain specific functions.
+
+### Methods
+[`coroutine.create()`](#global-objects_coroutine-method_create)  
+[`coroutine.status()`](#global-objects_coroutine-method_status)  
+[`coroutine.resume()`](#global-objects_coroutine-method_resume)  
+[`coroutine.running()`](#global-objects_coroutine-method_running)  
+[`coroutine.wrap()`](#global-objects_coroutine-method_wrap)  
+[`coroutine.yield()`](#global-objects_coroutine-method_yield)  
+
+
+=============
+
 
 ## <a name="global-objects_os">Operating System Facilities (OS)</a>  
 Description
