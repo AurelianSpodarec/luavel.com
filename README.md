@@ -1,3 +1,86 @@
+# Reference
+## Global Objects
+### Tables
+### Coroutine
+### String
+### Math
+### Operating System Facilities (OS)
+## Functions
+### Independent
+### Table Functions (like Array Methods e.g Array.map(), but just pure functions pair() used only with 'Table' aka Object )
+### Files
+### FIle Loaading Functions
+### Error Handling Functions
+## Expressions and Operators
+## Statements & Declarations
+
+
+
+==========================================================================
+
+# Global Objects
+## Tables
+## Coroutine
+## String
+## Math
+## Operating System Facilities (OS)
+
+
+
+
+### Table
+Description
+
+#### Constructor
+`{}`  
+Creates a new `Table` object.
+
+<!-- 
+    Provide short descriptoin
+    Link to `Refferences, Functions, {$function}
+ -->
+#### Functions
+[`next()`]  
+[`getmetatable()`]  
+[`setmetatable()`]  
+[`rawset()`]  
+[`rawget()`]  
+[`pairs()`]  
+[`ipairs()`]  
+
+<!-- 
+    Provide short descriptoin
+    Link to `Refferences, Table, {$method}
+ -->
+#### Methods
+[`table.insert()`]
+[`table.remove()`]
+[`table.pack()`]
+[`table.unpack()`]
+[`table.concat()`]
+[`table.sort()`]
+[`table.move()`]
+
+#### Example
+This section provides examples of common table operations in Lua.
+
+##### Create an table
+
+####
+
+
+==========================================================================
+
+
+
+
+
+
+
+
+
+
+<details>
 # Lua Documentation - Unofficial  🌙 
 * Note: This is Work in progress
 
@@ -49,77 +132,42 @@ Join Lua Community server on discord! https://discord.gg/nNu6FeHC
 
 
 
-And then have specific Guide that's more detailed
-# Lua guide
-## Variables
-## 
-## Error Handling
+
+
+
+
+
+
 ==========================================================================
 
+ <!-- Guide
+Refference -->
 
+# Lua guide
+## Reference
 
-Guide
-Refference
 
 
 
 ===========================================================================
 
-# Lua Refference
-
-
-
-
-
-
+# Reference
+## Built in Objects
+### Tables
+### Coroutine
+### String
+### Math
+### Operating System Facilities (OS)
 ## Functions
-### Indepenndent
-### Table Functions
+### Independent
+### Table Functions (like Array Methods e.g Array.map(), but just pure functions pair() used only with 'Table' aka Object )
 ### Files
 ### FIle Loaading Functions
 ### Error Handling Functions
-
-## [Built in Objects](#built-in-objects)
-### [String](#built-in-objects_string)
-### [Math](#built-in-objects_math)
-### [Operating System Facilities (OS)](#built-in-objects_os)
-### [Coroutine](#built-in-objects_coroutine)
-### [Table](#built-in-objects_table)
-
 ## Expressions and Operators
-### Asigment operators
-### Arithmetic operators
-
 ## Statements & Declarations
-### Variables
-### Iterators
-### Control Flow
-### ...whatever relse there is
-
-
-
  
-and
-break
-do
-else
-elseif
-end
-false     
-for ... do 
-function  
-if ... then
-in
-local     
-nil       
-not       
-or
-repeat    
-return    
-then      
-true      
-until     
-while
+ 
  
 
 <!-- 
@@ -427,23 +475,23 @@ Relational Operators always resolve in `true` or `false`.
 
 ## Methods
 
-`String.byte()`
-`String.char()`
-`String.dump()`
-`String.find()`
-`String.format()`
-`String.gmatch()`
-`String.gsub()`
-`String.len()`
-`String.lower()`
-`String.match()`
-`String.pack()`
-`String.packsize()`
-`String.rep()`
-`String.reverse()`
-`String.sub()`
-`String.unpack()`
-`String.upper()`
+`String.byte()`  
+`String.char()`  
+`String.dump()`  
+`String.find()`  
+`String.format()`  
+`String.gmatch()`  
+`String.gsub()`  
+`String.len()`  
+`String.lower()`  
+`String.match()`  
+`String.pack()`  
+`String.packsize()`  
+`String.rep()`  
+`String.reverse()`  
+`String.sub()`  
+`String.unpack()`  
+`String.upper()`  
 
 
 ===========================================================================
@@ -452,10 +500,10 @@ Relational Operators always resolve in `true` or `false`.
 # <a name="doc_math">Math</a>
 
 ## Methods
-`Math.modf()`
-`Math.floor()`
-`Math.max()`
-`Math.celi()`
+`Math.modf()`  
+`Math.floor()`  
+`Math.max()`  
+`Math.celi()`  
 
 
 
@@ -474,107 +522,37 @@ Relational Operators always resolve in `true` or `false`.
 
 ===========================================================================
 
-# <a name="functions">Functions</a>
-
-## Methods
-
-<!-- Tables function - should go under table as functions... -->
-`next()` (table only function)
-`getmetatable()` (object) - what's an object anyway, a table? I guess...
-`setmetatable()`(table only)
-`rawset()`  (table only)
-`rawget()` (table only function)
-`rawlen()` (table/string - returns length)
-`rawequal()` (?)
-
-`pairs()` (table only function)
-`ipairs()`(table only function)
-
-<!-- Should go to Error Handling section of the documentation -->
-`assert()`
-`warn()`
-`error()`
-
-`pcall()`
-`xpcall()`
-
-
-<!-- Other -->
-`print()`
-
-`select()`
-`tonumber()`
-`tostring()`
-`type()`
-
-<!-- Look at node docs where they put this -->
-`load()`
-`loadfile()`
-`dofile()`
-
-
-<!-- ? -->
-`collectgarbage()`
-
-
-
-Metatable
-Metamethod
-
-
-
-
-
-
-
-
-
-
-
-## General Functions
-[`rawlen()`](#table_function_rawlen)  (table/string - returns length)
-[`rawequal()`](#table_function_rawequal)  (???? rawequal(v1, v2) wtf is that)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## <a name="doc_table">Tables</a>
+# <a name="refference_functions">Functions</a>
+`next()`  
+`getmetatable()`  
+`setmetatable()`  
+`rawset()`  
+`rawget()`  
+`rawlen()`  
+`rawequal()`  
+`pairs()`  
+`ipairs()`  
+`assert()`  
+`warn()`  
+`error()`  
+`pcall()`  
+`xpcall()`  
+`print()`  
+`select()`  
+`tonumber()`  
+`tostring()`  
+`type()`  
+`load()`  
+`loadfile()`  
+`dofile()`  
+`collectgarbage()`  
+
+
+
+
+
+
+## <a name="refference_table">Tables</a>
 
 <details>
 Editor notes: Show how to loop over  the tables, how to loop over them. Instead of showing just methods, include how to use a table somewhere.
@@ -632,58 +610,61 @@ To get a table values you need to loop over them. Check out `pairs` and `ipairs.
 
 
 ### Table Functions
-[`next()`](#table_function_next) (table only function)
+<!-- 
+  link to functions to the functions side?
+ Dont write the explanation/examples under 'table' but under 'functions'? 
+-->
+[`next()`](#refference_function_next)  
 
-[`getmetatable()`](#table_function_getmetatable) (table) - what's an object anyway, a table? I guess...
 
-[`setmetatable()`](#table_function_setmetatable)  (table only)
+[`getmetatable()`](#refference_function_getmetatable)  
 
-[`rawset()`](#table_function_rawset)  (table only)
+[`setmetatable()`](#refference_function_setmetatable)  
 
-[`rawget()`](#table_function_rawget)  (table only function)
+[`rawset()`](#refference_function_rawset)  
 
-[`pairs()`](#table_function_pairs)  (table only function)
+[`rawget()`](#refference_function_rawget)  
 
-[`ipairs()`](#table_function_ipairs)  (table only function)
+[`pairs()`](#refference_function_pairs)  
+
+[`ipairs()`](#refference_function_ipairs)  
 
 
 ### Methods
 
-[`table.insert()`](#table-insert)  
+[`table.insert()`](#object_table_insert)  
 Adds one element to the table.
 
-[`table.remove()`](#table-remove)  
+[`table.remove()`](#object_table_remove)  
 Removes one element from the table.
 
-[`table.pack()`](#table-pack)  
+[`table.pack()`](#object_table_pack)  
 Packs elements into a new table.
 
-[`table.unpack()`](#table-unpack)  
+[`table.unpack()`](#object_table_unpack)  
 Unpacks a table into values.
 
-[`table.concat()`](#table-concat)  
+[`table.concat()`](#object_table_concat)  
 Returns a combined string from a table.
 
-[`table.sort()`](#table-sort)  
+[`table.sort()`](#object_table_sort)  
 Sorts the values in a table.
 
-[`table.move()`](#table-move)
-
+[`table.move()`](#object_table_move)
 
 
 ===========================================================================
 
 
-
-# <a name="table-insert">Table.insert()</a>
+## <a name="table-insert">Table.insert()</a>
 The `table.insert()` method adds one element to the end of the table.
 
-## Syntax
+### Syntax
 ```Lua
 table.insert(tbl, value)
 ```
 
-## Parameter
+### Parameter
 `tbl`
 The table where the item should be removed from.
 
@@ -691,9 +672,9 @@ The table where the item should be removed from.
 The element to add to the end of the table.
 
 
-## Examples
+### Examples
 
-### Adding elements to a table
+#### Adding elements to a table
 
 ```Lua
 
@@ -741,24 +722,24 @@ table.remove(groceries, 2)
 
 
 
-# <a name="table-concat">Table.concat()</a>
+## <a name="table-concat">Table.concat()</a>
 The `table.concat()` function is used to concatinate table values into a string.
 
-## Syntax
+### Syntax
 ```Lua
 table.concat(tbl, seperator)
 ```
 
-## Parameter
+### Parameter
 `tbl`
 The table to be concatinated.
 
 `seperator (optional)`
 Used as a separator between values.
 
-## Examples
+### Examples
 
-### Only table provided to the function.
+#### Only table provided to the function.
 ```Lua
 local tbl = {"The","fox","jumps","over","the","lazy","dog",}
 
@@ -775,7 +756,7 @@ print(table.concat(tab))
 -- Output: 1234
 ```
 
-### Table provided with the second parameter
+#### Table provided with the second parameter
 
 ```Lua
 local tbl = {"The","fox","jumps","over","the","lazy","dog",}
@@ -795,20 +776,20 @@ print(table.concat(tbl, "-"))
 
 
 
-# <a name="table-pack">Table.pack()</a>
+## <a name="table-pack">Table.pack()</a>
 The `table.pack()` method is used to combine values into a newly created table.
 
-## Syntax
+### Syntax
 ```
 table.pack(elements)
 ```
 
-## Parameters
+### Parameters
 `elements`
 The values to combine into a newly created table
 
 
-## Examples
+### Examples
 
 This will combine all values into a new table.
 ```Lua
@@ -843,21 +824,21 @@ print(darkChocolateTable[3][2])
 
 
 
-# <a name="table-unpack">Table.unpack()</a>
+## <a name="table-unpack">Table.unpack()</a>
 
 The `table.unpack()` returns all values from a table.
 
-## Syntax
+### Syntax
 
 ```Lua
 table.unpack(tbl)
 ```
 
-## Parameters
+### Parameters
 `tbl`
 The table to be unpacked.
 
-## Examples
+### Examples
 
 Unpacking a table
 ```Lua
@@ -898,23 +879,23 @@ print(table.unpack(groceries))
 
 
 
-# <a name="table-sort">Table.sort()</a>
+## <a name="table-sort">Table.sort()</a>
 
 The `table.sort()` sorts a table and returns its value sorted. If no value is provited, the sort function will default to alphabetical sorting.
 
 
-## Syntax
+### Syntax
 ```Lua
 table.sort(tbl)
 
 table.sort(tbl, value)
 ```
 
-## Parameters
+### Parameters
 
 
 
-## Examples
+### Examples
 
 
 
@@ -1400,3 +1381,4 @@ Explanation about the feature
 
 </details>
 
+</details>
