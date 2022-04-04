@@ -1,11 +1,6 @@
- 
-C API
-Auxiliary Library
-Metamethods
-Enviroment Variables
-# Table of contents
 
-- **[Lua Functions](#lua_functions)**
+# Table of contents
+- **[Lua Basics](#lua_basics)**
   - **[Functions](#functions)**  
       - [Independent](#functions_table)  
       - [Table Functions](#functions_table)  
@@ -28,29 +23,27 @@ Enviroment Variables
 - **C API**
 - **Auxiliary Library**
 
-<!-- - **[Functions](#functions)**  
-    - [Independent](#functions_table)  
-    - [Table Functions](#functions_table)  
-    - [Files](#functions_table)  
-    - [Error Handling](#functions_table) 
-- **[Global Objects](#global-objects)**  
-    - [String](#global-objects_string)  
-    - [Math](#global-objects_math)  
-    - [Table](#global-objects_table)  
-    - [Coroutine](#global-objects_coroutine)  
-    - [Operating System Facilities (OS)](#global-objects_os)  
-    - [Input and Output Facilities (IO)](#global-objects_io)  
-    - [UTF-8](#global-objects_utf-8)
-    - [Debug](#global-objects_debug)
-    - [Modules](#global-objects_modules)
-- **[Expressions & Operators](#expressions-and-operators)**  
-- **[Statements & Declarations](#staatements-and-declarations)**   -->
+
+
+==========================================================================
+# <a name="expressions-and-operators">Expressions & Operators</a>  
+
+-----------------------
+
 
 
 
 
 ==========================================================================
-# [Functions](#functions)  
+# <a name="staatements-and-declarations">Statements & Declarations</a>  
+
+-----------------------
+
+
+
+
+==========================================================================
+# <a name="functions">Functions</a>  
 - [Independent](#functions_independent)  
 - [Table Functions ](#functions_table)  
 - [Files](#functions_files)  
@@ -1375,12 +1368,6 @@ link to JSON decoder - http://dkolf.de/src/dkjson-Lua.fsl/home
 
 
 
-
-
-
-
-
-
 ----------------------------------
 
 
@@ -1390,61 +1377,9 @@ link to JSON decoder - http://dkolf.de/src/dkjson-Lua.fsl/home
 
 
 <details>
+ 
 
 
-<summary>.</summary>
-
-
-# Template
-
-
-# Name
-Description what it does
-
-## Syntax
-## Parameters
-## Examples
-
-
-notes
-.
-.
-.
-.
-.
-.
-.
-
-
-
-
-
-
-
-
-
-
-
-
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
-
-# Lua Guidelines
-It seems like general Lua programmers code seems to follow PHP style
-
-
-## Variables
-## Operators and comparison
-## 
-
-
-
-------------------------------------
-
-# Variables
-
-groceries
-groceries <const>
 
 
 
@@ -1452,20 +1387,24 @@ Moon theme, because Lua is Luna/Moon
 
 https://www.tutorialspoint.com/execute_Lua_online.php
 https://www.typingclub.com/
-
 https://developer.mozilla.org/en-US/docs/MDN/Guidelines/Code_guidelines/JavaScript
+https://Luarocks.org/
+https://stackoverflow.com/questions/4880368/how-to-delete-all-elements-in-a-Lua-table
 
-@@@@
 
-Lua com
+<!-- http://Lua-users.org/wiki/TablesTutorial -->
+<!-- https://developer.roblox.com/en-us/articles/Metatables -->
+<!-- https://www.Lua.org/pil/19.2.html -->
 
+ 
+ 
+ 
 21 reserved words
 1 mechanism to represent data struture
 
 Lua is a dynamic language, not type anotations needed
 
 
-https://Luarocks.org/
 
 
 If you're comning from a language such as JavaScript or PHP, some differences are worth noting
@@ -1475,48 +1414,7 @@ Count starts from 1 not 0
 1 does not mean true
 ```
 
-@@@@
-
-
-coroutine.create() - suspend and resume code
-coroutine.yeld() - puse
-courutine.resume() - continue executoin
-
-# Reserved words
-
-
-
-# Other
-## const
- 
-## pairs
-## ipairs
-## next
-## rawset
-## count
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Docs to look at: React, Laravel, JS MDN -->
-
-Use real life examples, not some foo bar, a, e, i... 
-
- 
-
- 
-<const>
+  
 
 # Variables
 
@@ -1527,152 +1425,21 @@ In Lua to declaare a variable you simply write out the name
 if you want to you can also
 
 `variable <const>`
+# Declearing Variables
 
-# Scope
-
-# Functions
-
-# Tables aka Objects & Arrays
-
-Lua doesn't have objects nor arrays - it has just tables. s
-Tables in Luas is Arr
-Objects in Lua are called Tables. 
-Objects in Lua are called Arrays.They serve as an array and object.
-
-To insert into the database, you need to `table.insert(table, value)`
-
-To unpack values from a table, you need to unpack(data)
-
-If you print a table, you will see table hash therefore you need to use special pairs and ipairs to show the content
+groceries = {}
+groceries <const> = {}
 
 
-<!-- object.getHash() -->
-<!-- object.print() -->
-<!-- object.count() -->
-<!-- object.insertTo(object, data) -->
-<!-- object.removeFrom(data, index) -->
-<!-- object.unpack(data) -->
-<!-- object.returnHashes() -->
-<!-- object.create -->
-
-<!-- Lua utility -->
-
-To access properties of tables, you need to use special functions. pairs and ipairs.
-
-Here are a few ways to work with them.
-
-JavaScript Example
-```js
-
-
-```
-
-Lua Example
-```
-
-```
-
-
-LUA Example
-```
-local people = {
-    test = {
-    ['99'] = {
-         name = "Fred",
-         address = "16 Long Street",
-         phone = "123456"
-     },
-     ['8989'] = {
-         name = "Wilma",
-         address = "16 Long Street",
-         phone = "123456"
-        }
-    }
-}
-```
-  
---   for index, data in pairs(people.test) do
---       print(index)
-  
---       -- for key, value in pairs(data) do
---       --     print('\t', key, value)
---       -- end
---   end
-  
-  -- hash breaks this 
-
-
-
-
-
-lunavel.com
-
-Lunavel, the unofficial documentation you were looking for Luna!
-Get started
-
-
+ 
 Asigning Values
-
 Reading values
-
 Good/Bad pratcie
-
 Creating your own functions 
 
 
-
-
-
-
-
-Built-In Globals
-Lua Globals
-Roblox Globals
-
-Lua Libraries
-coroutine
-debug
-math
-os
-string
-table
-utf8
-bit32
-
-
-# Working with JSON
-
-
-
-# Have plugins
-Copy and paste it in your file app/illuminate
-
-- JSON - ability to decode JSON into Lua
-- Table [ print table Content], not just hash
-
-
-
-
-
-
-
-
-
-# Getting Started
-
-## Meet Lua
-Lua is a scripting language ...
-
-
-### Why Lua?
-
-What is Luna
-
-#### Flexibile
-
-### Starter Kits
-<!-- Table addons plugin -->
-<!-- JSON plugin -->
+ 
+ 
 
 
 # Data Types
@@ -1685,54 +1452,8 @@ userdata
 thread
 table
 
-# Declearing Variables
 
-groceries = {}
-groceries <const> = {}
-
-
-https://stackoverflow.com/questions/4880368/how-to-delete-all-elements-in-a-Lua-table
-# Statements and declerations
-
-
-
-
-
-## Classes
-
-## JSON
-<!-- Lua doens't provide support for JSON, however there' is a package you can install to get support for it -->
-
-<!-- Accessing values in tables -->
-
-
-# Method explore - example
-Short info 
-
-<!-- list all methods  -->
-
-
-# Property definition - Example Framework 
-Explanation about the feature
-<!-- Demo -->
-
-## Syntax
-<!-- code -->
-
-## Description
-
-
-## Examples
-
-
-
-
-
-
-
-<!-- http://Lua-users.org/wiki/TablesTutorial -->
-<!-- https://developer.roblox.com/en-us/articles/Metatables -->
-<!-- https://www.Lua.org/pil/19.2.html -->
+ 
 
 
 </details>
