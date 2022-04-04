@@ -50,35 +50,35 @@
 -----------------------
 
 ## <a name="functions_independent">Independent</a>  
-[`print`]('functions_print)  
-[`type`]('functions_type)  
-[`tonumber`]('functions_tonumber)  
-[`tostring`]('functions_tostring)  
-[`rawlen`]('functions_rawlen)  
-[`select`]('functions_select)  
-[`collectgarbage`]('functions_collectgarbage)  
+[`print()`]('functions_print)  
+[`type()`]('functions_type)  
+[`tonumber()`]('functions_tonumber)  
+[`tostring()`]('functions_tostring)  
+[`rawlen()`]('functions_rawlen)  
+[`select()`]('functions_select)  
+[`collectgarbage()`]('functions_collectgarbage)  
 
 ## <a name="functions_table">Table Functions</a>  
-[`next`]('functions_next)  
-[`pairs`]('functions_pairs)  
-[`ipairs`]('functions_ipars)  
-[`rawset`]('functions_rawset)  
-[`rawget`]('functions_rawget)  
-[`rawequal`]('functions_rawequal)  
-[`setmetatable`]('functions_setmetable)  
-[`getmetatable`]('functions_getmetable)  
+[`next()`]('functions_next)  
+[`pairs()`]('functions_pairs)  
+[`ipairs()`]('functions_ipars)  
+[`rawset()`]('functions_rawset)  
+[`rawget()`]('functions_rawget)  
+[`rawequal()`]('functions_rawequal)  
+[`setmetatable()`]('functions_setmetable)  
+[`getmetatable()`]('functions_getmetable)  
 
 ## <a name="functions_files">Files</a>  
-[`require`]('functions_require)  
-[`dofile`]('functions_dofile)  
-[`load`]('functions_load)  
-[`loadfile`]('functions_loadfile)  
+[`require()`]('functions_require)  
+[`dofile()`]('functions_dofile)  
+[`load()`]('functions_load)  
+[`loadfile()`]('functions_loadfile)  
 
 ## <a name="functions_error-handling">Error Handling</a>  
-[`pcall`]('functions_pcall)  
-[`error`]('functions_error)  
-[`xpcall`]('functions_xpcall)  
-[`assert`]('functions_assert)  
+[`pcall()`]('functions_pcall)  
+[`error()`]('functions_error)  
+[`xpcall()`]('functions_xpcall)  
+[`assert()`]('functions_assert)  
 
 
 **[⬆ back to top](#table-of-contents)**
@@ -140,8 +140,9 @@ Special characters can be encoded using escape sequences:
 [`String.unpack()`](#global-objects_string-method_unpack)  
 [`String.upper()`](#global-objects_string-method_upper)  
 
+
 **[⬆ back to top](#table-of-contents)**
-=============
+
 
 
 ## <a name="global-objects_math">Math</a>  
@@ -247,8 +248,9 @@ Special characters can be encoded using escape sequences:
 ### Example
 This section provides examples of common math operations in Lua.
 
+
 **[⬆ back to top](#table-of-contents)**
-=============
+
 
 ## <a name="global-objects_table">Table</a>
 `table` is a built in object 
@@ -292,8 +294,9 @@ This section provides examples of common math operations in Lua.
 ### Example
 This section provides examples of common table operations in Lua.
 
+
 **[⬆ back to top](#table-of-contents)**
-=============
+
 
 ## <a name="global-objects_coroutine">Coroutine</a>  
 `coroutine` is a built in object 
@@ -312,8 +315,9 @@ This object does not contain specific functions.
 [`coroutine.wrap()`](#global-objects_coroutine-method_wrap)  
 [`coroutine.yield()`](#global-objects_coroutine-method_yield)  
 
+
 **[⬆ back to top](#table-of-contents)**
-=============
+
 
 
 ## <a name="global-objects_os">Operating System Facilities (OS)</a>  
@@ -340,8 +344,9 @@ This object does not contain specific functions.
 ### Example
 This section provides examples of common os operations in Lua.
 
+
 **[⬆ back to top](#table-of-contents)**
-=============
+
 
 ## <a name="global-objects_io">Input and Output Facilities</a>  
 `io` is a built in object that helps manipulating files.
@@ -371,8 +376,9 @@ This object does not contain specific functions.
 ### Example
 This section provides examples of common os operations in Lua.
 
+
 **[⬆ back to top](#table-of-contents)**
-=============
+
 
 ## <a name="global-objects_utf-8">UTF 8</a>  
 `utf8` is a built in object that provides basic support for UTF-8 encoding.
@@ -398,8 +404,9 @@ This object does not contain specific functions.
 ### Example
 This section provides examples of common os operations in Lua.
 
+
 **[⬆ back to top](#table-of-contents)**
-=============
+
 
 ## <a name="global-objects_debug">Debug</a>  
 `debug` is a built in object that provides support for debuging.
@@ -431,8 +438,9 @@ This object does not contain specific functions.
 ### Example
 This section provides examples of common os operations in Lua.
 
+
 **[⬆ back to top](#table-of-contents)**
-=============
+
 
 ## <a name="global-objects_modules">Modules</a>  
 `debug` is a built in object that provides support for debuging.
@@ -455,8 +463,9 @@ This section provides examples of common os operations in Lua.
 [`package.searchpath()`](#global-objects_module-method_searchpath)  
 
 
+
 **[⬆ back to top](#table-of-contents)**
-==========================================================================
+=============================================================
 
 
 <details>
@@ -478,13 +487,9 @@ IO
 
 
 
-Test
- 
-<pre><code>local dogs = { &quot;Bob&quot;, &quot;Joe&quot;}
 
-print(dogs[1])</code></pre>
 
-[Attempt This Online!](https://ato.pxeger.com/run?1=m704pzRxwYKlpSVpuhY3dXLykxNzFFLy04sVbBWqFZSc8pOUdBSUvPJTlWq5uAqKMvNKNECy0YaxmhA9UK0wIwA)
+
 
 
 
