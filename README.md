@@ -28,8 +28,6 @@
 ==========================================================================
 # <a name="expressions-and-operators">Expressions & Operators</a>  
 
------------------------
-
 [`Addition +`]  
 [`Subtraction -`]  
 [`Multiplication *`]  
@@ -52,6 +50,7 @@
 
 ==========================================================================
 # <a name="staatements-and-declarations">Statements & Declarations</a>  
+
 [`local`]  
 [`<const>`]  
 [`break`]  
