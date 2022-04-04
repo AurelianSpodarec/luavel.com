@@ -97,88 +97,88 @@ The rounding functions `math.ceil, math.floor, and math.modf return an integer w
 
 ### Methods
 [`math.abs(x)`](#global-objects_math_methods_abs)  
-&nbsp;&nbsp; Returns the absolute value of `x`.  
+Returns the absolute value of `x`.  
 
 [`math.acos(x)`](#global-objects_math_methods_acos)  
-&nbsp;&nbsp; Returns the arccosine of `x`.  
+Returns the arccosine of `x`.  
 
 [`math.asin(x)`](#global-objects_math_methods_asin)  
-&nbsp;&nbsp; Returns the arcsine of `x`.  
+Returns the arcsine of `x`.  
 
 [`math.atan(x)`](#global-objects_math_methods_atan)  
-&nbsp;&nbsp; Returns the arctangent of `x`.  
+Returns the arctangent of `x`.  
 
 [`math.atan2(y, x)`](#global-objects_math_methods_atan2)  
-&nbsp;&nbsp; Returns the arctangent of the quotient of its arguments.
+Returns the arctangent of the quotient of its arguments.
 
 [`math.celi(x)`](#global-objects_math_methods_celi)  
-&nbsp;&nbsp; Returns the smallest integer greater than or equal 
-to `x`.  
+Returns the smallest integer greater than or equal to `x`.  
+
 [`math.cos(x)`](#global-objects_math_methods_cos)  
-&nbsp;&nbsp; Returns the cosine of `x`.  
+Returns the cosine of `x`.  
 
 [`math.cosh(x)`](#global-objects_math_methods_cosh)  
-&nbsp;&nbsp; Returns the hyperbolic cosine of `x`.  
+Returns the hyperbolic cosine of `x`.  
 
 [`math.deg(x)`](#global-objects_math_methods_deg)  
-&nbsp;&nbsp; TODO: Improve - Returns the angle `x` (given in r
-adians) in degrees.  
+TODO: Improve - Returns the angle `x` (given in radians) in degrees.  
+
 [`math.exp(x)`](#global-objects_math_methods_exp)  
-&nbsp;&nbsp; Returns `e^x`, where `x` is the argument, and e i
-s Euler's constant (`2.718…`, the base of the natural logarithm).  
+Returns `e^x`, where `x` is the argument, and e is Euler's constant (`2.718…`, the base of the natural logarithm).  
+
 [`math.floor(x)`](#global-objects_math_methods_floor)  
-&nbsp;&nbsp; Returns the largest integer less than or equal to `x`
-.  
+Returns the largest integer less than or equal to `x`.
+
 [`math.fmod(x, y)`](#global-objects_math_methods_fmod)  
-&nbsp;&nbsp; TODO: Improve - Returns the remainder of the division 
-of x by y that rounds the quotient towards zero.  
+TODO: Improve - Returns the remainder of the division of x by y that rounds the quotient towards zero.  
+
 [`math.frexp(x)`](#global-objects_math_methods_frexp)  
-&nbsp;&nbsp; TODO: Improve -Returns m and e such that x = m2e, e i
-s an integer and the absolute value of m is in the range `[0.5, 1)` `(or zero when x is zero)`.  
+TODO: Improve -Returns m and e such that x = m2e, e is an integer and the absolute value of m is in the range `[0.5, 1)` `(or zero when x is zero)`.  
+
 [`math.ldexp(x, y)`](#global-objects_math_methods_ldexp)  
-&nbsp;&nbsp; TODO: Improve - Returns m2e (e should be an integer).  
+TODO: Improve - Returns m2e (e should be an integer).  
 
 [`math.logx(x)`](#global-objects_math_methods_log)  
-&nbsp;&nbsp; Returns the natural logarithm (㏒e; also, ㏑) of `
+Returns the natural logarithm (㏒e; also, ㏑) of `
 x`.  
 [`math.log10(x)`](#global-objects_math_methods_log10)  
-&nbsp;&nbsp; Returns the base-10 logarithm of `x`.  
+Returns the base-10 logarithm of `x`.  
 
 [`math.max(x, ..., y)`](#global-objects_math_methods_max)  
-&nbsp;&nbsp; Returns the largest of zero or more numbers.  
+Returns the largest of zero or more numbers.  
 
 [`math.min(x, ..., y)`](#global-objects_math_methods_min)  
-&nbsp;&nbsp; Returns the smallest of zero or more numbers.  
+Returns the smallest of zero or more numbers.  
 
 [`math.modf(x)`](#global-objects_math_methods_modf)  
-&nbsp;&nbsp; TODO: Improve - Returns two numbers, the integral p
-art of x and the fractional part of x.  
+TODO: Improve - Returns two numbers, the integral part of x and the fractional part of x.
+
 [`math.pow(x, y)`](#global-objects_math_methods_pow)  
-&nbsp;&nbsp; Returns base `x` to the exponent power y (that is, `
-x^y`).  
+Returns base `x` to the exponent power y (that is, `x^y`).
+
 [`math.rad(x)`](#global-objects_math_methods_rad)  
-&nbsp;&nbsp; TODO: Improve - Returns the angle x (given in deg
-rees) in radians.  
+TODO: Improve - Returns the angle x (given in degrees) in radians.  
+
 [`math.random(x)`](#global-objects_math_methods_random)  
-&nbsp;&nbsp; Returns a pseudo-random number between `0` and `1`.  
+Returns a pseudo-random number between `0` and `1`.  
 
 [`math.randomseed(x)`](#global-objects_math_methods_randomseed)  
-&nbsp;&nbsp; TODO: Improve - Sets x as the "seed" for the pseudo-random gene
-rator: equal seeds produce equal sequences of numbers.  
+TODO: Improve - Sets x as the "seed" for the pseudo-random gene rator: equal seeds produce equal sequences of numbers.  
+
 [`math.sinx(x)`](#global-objects_math_methods_sin)  
-&nbsp;&nbsp; Returns the sine of `x`.  
+Returns the sine of `x`.  
 
 [`math.sinh(x)`](#global-objects_math_methods_sinh)  
-&nbsp;&nbsp; Returns the hyperbolic sine of `x`.  
+Returns the hyperbolic sine of `x`.  
 
 [`math.sqrt(x)`](#global-objects_math_methods_sqrt)  
-&nbsp;&nbsp; Returns the positive square root of `x`.  
+Returns the positive square root of `x`.  
 
 [`math.tan(x)`](#global-objects_math_methods_tan)  
-&nbsp;&nbsp; Returns the tangent of `x`.  
+Returns the tangent of `x`.  
 
 [`math.tanh(x)`](#global-objects_math_methods_tanh)  
-&nbsp;&nbsp; Returns the hyperbolic tangent of `x`.
+Returns the hyperbolic tangent of `x`.
 
 
 
