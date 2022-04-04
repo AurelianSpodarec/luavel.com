@@ -52,7 +52,7 @@ Special characters can be encoded using escape sequences:
 
 
 ### Functions
-[`tostring()`]
+[`tostring()`](#???_tostring)
  <!-- Editor: Should this be here? -->
 
 ### Methods
@@ -190,7 +190,7 @@ This section provides examples of common math operations in Lua.
 
 
 ## <a name="global-objects_table">Table</a>
-`Table` is a built in object 
+`table` is a built in object 
 
 ### Constructor
 `{}` Creates a new `Table` object.  
@@ -224,7 +224,7 @@ This section provides examples of common table operations in Lua.
 
 
 ## <a name="global-objects_coroutine">Coroutine</a>  
-`Coroutine` is a built in object 
+`coroutine` is a built in object 
 
 ### Constructor
 `coroutine.create()` Creates a new `Coroutine` object.
