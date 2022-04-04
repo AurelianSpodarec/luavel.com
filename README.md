@@ -1,37 +1,41 @@
-# Reference
-## Global Objects
-### Tables
-### Coroutine
-### String
-### Math
-### Operating System Facilities (OS)
-## Functions
-### Independent
-### Table Functions (like Array Methods e.g Array.map(), but just pure functions pair() used only with 'Table' aka Object )
-### Files
-### FIle Loaading Functions
-### Error Handling Functions
-## Expressions and Operators
-## Statements & Declarations
+## Reference
+### [Global Objects](#global-objects)
+#### [Table](#global-objects__table)
+#### Coroutine
+#### String
+#### Math
+#### Operating System Facilities (OS)
+### Functions
+#### Independent
+#### Table Functions (like Array Methods e.g Array.map(), but just pure functions pair() used only with 'Table' aka Object )
+#### Files
+#### FIle Loaading Functions
+#### Error Handling Functions
+### Expressions and Operators
+### Statements & Declarations
 
 
 
 ==========================================================================
 
-# Global Objects
-## Tables
-## Coroutine
-## String
-## Math
-## Operating System Facilities (OS)
 
 
+## [Global Objects](#global-objects)  
+[String](#global-objects__string)  
+[Math](#global-objects__math)  
+[Table](#global-objects__table)  
+[Coroutine](#global-objects__coroutine)  
+[Operating System Facilities (OS)](#global-objects__math)  
 
+=======================
+## <a name="global-objects_table">String</a>  
 
-### Table
+## <a name="global-objects_table">Math</a>  
+
+## <a name="global-objects_table">Table</a>
 Description
 
-#### Constructor
+### Constructor
 `{}`  
 Creates a new `Table` object.
 
@@ -39,7 +43,7 @@ Creates a new `Table` object.
     Provide short descriptoin
     Link to `Refferences, Functions, {$function}
  -->
-#### Functions
+### Functions
 [`next()`]  
 [`getmetatable()`]  
 [`setmetatable()`]  
@@ -52,7 +56,7 @@ Creates a new `Table` object.
     Provide short descriptoin
     Link to `Refferences, Table, {$method}
  -->
-#### Methods
+### Methods
 [`table.insert()`]
 [`table.remove()`]
 [`table.pack()`]
@@ -61,13 +65,18 @@ Creates a new `Table` object.
 [`table.sort()`]
 [`table.move()`]
 
-#### Example
+### Example
 This section provides examples of common table operations in Lua.
 
-##### Create an table
+#### Create an table
 
-####
 
+
+## <a name="global-objects_table">Coroutine</a>  
+Description
+
+## <a name="global-objects_table">Operating System Facilities (OS)</a>  
+Description
 
 ==========================================================================
 
