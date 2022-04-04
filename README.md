@@ -23,9 +23,8 @@
 - **C API**
 - **Auxiliary Library**
 
+---------------------------------
 
-
-==========================================================================
 # <a name="expressions-and-operators">Expressions & Operators</a>  
 
 [`Addition +`](#table-of-contents)  
@@ -48,7 +47,6 @@
 
 
 
-==========================================================================
 # <a name="staatements-and-declarations">Statements & Declarations</a>  
 
 [`local`](#table-of-contents)  
@@ -74,7 +72,6 @@
 
 
 
-==========================================================================
 # <a name="functions">Functions</a>  
 <!-- - [Independent](#functions_independent)   -->
 <!-- - [Table Functions ](#functions_table)   -->
@@ -114,7 +111,7 @@
 
 **[⬆ back to top](#table-of-contents)**
 
-==========================================================================
+
 
 # [Global Objects](#global-objects)  
 - [String](#global-objects_string)  
