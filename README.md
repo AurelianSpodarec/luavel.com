@@ -79,14 +79,14 @@
 
 ==========================================================================
 # <a name="functions">Functions</a>  
-- [Independent](#functions_independent)  
-- [Table Functions ](#functions_table)  
-- [Files](#functions_files)  
-- [Error Handling](#functions_error-handling)  
+<!-- - [Independent](#functions_independent)   -->
+<!-- - [Table Functions ](#functions_table)   -->
+<!-- - [Files](#functions_files)   -->
+<!-- - [Error Handling](#functions_error-handling)   -->
 
 -----------------------
 
-## <a name="functions_independent">Independent</a>  
+<!-- ## <a name="functions_independent">Independent</a>   -->
 [`print()`]('functions_print)  
 [`type()`]('functions_type)  
 [`tonumber()`]('functions_tonumber)  
@@ -94,8 +94,7 @@
 [`rawlen()`]('functions_rawlen)  
 [`select()`]('functions_select)  
 [`collectgarbage()`]('functions_collectgarbage)  
-
-## <a name="functions_table">Table Functions</a>  
+<!-- ## <a name="functions_table">Table Functions</a>   -->
 [`next()`]('functions_next)  
 [`pairs()`]('functions_pairs)  
 [`ipairs()`]('functions_ipars)  
@@ -104,14 +103,12 @@
 [`rawequal()`]('functions_rawequal)  
 [`setmetatable()`]('functions_setmetable)  
 [`getmetatable()`]('functions_getmetable)  
-
-## <a name="functions_files">Files</a>  
+<!-- ## <a name="functions_files">Files</a>   -->
 [`require()`]('functions_require)  
 [`dofile()`]('functions_dofile)  
 [`load()`]('functions_load)  
 [`loadfile()`]('functions_loadfile)  
-
-## <a name="functions_error-handling">Error Handling</a>  
+<!-- ## <a name="functions_error-handling">Error Handling</a>   -->
 [`pcall()`]('functions_pcall)  
 [`error()`]('functions_error)  
 [`xpcall()`]('functions_xpcall)  
@@ -428,7 +425,7 @@ print(Class.makeSound("Woof!"))
 `coroutine` is a built in object 
 
 ### Constructor
-`coroutine.create()` Creates a new `Coroutine` object.
+`coroutine.create()` Creates a new `coroutine` object.
 
 ### Functions
 This object does not contain specific functions.
@@ -547,8 +544,8 @@ This section provides examples of common os operations in Lua.
 [`debug.sethook()`](#global-objects_debug-method_sethook)  
 [`debug.setlocal()`](#global-objects_debug-method_setlocal)  
 [`debug.setmetatable()`](#global-objects_debug-method_setmetable)  
-[`debug.setupvalue()`](#global-objects_debug-method_setupvalue)
-[`debug.setuservalue()`](#global-objects_debug-method_setuservalue) 
+[`debug.setupvalue()`](#global-objects_debug-method_setupvalue)  
+[`debug.setuservalue()`](#global-objects_debug-method_setuservalue)  
 [`debug.traceback()`](#global-objects_debug-method_traceback)  
 [`debug.upvalueid()`](#global-objects_debug-method_upvalueid)  
 [`debug.upvaluejoin()`](#global-objects_debug-method_upvaluejoin)  
