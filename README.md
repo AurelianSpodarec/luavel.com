@@ -1,18 +1,18 @@
 ## Reference
 ### [Global Objects](#global-objects)
-#### [Table](#global-objects__table)
-#### Coroutine
-#### String
-#### Math
-#### Operating System Facilities (OS)
-### Functions
-#### Independent
-#### Table Functions (like Array Methods e.g Array.map(), but just pure functions pair() used only with 'Table' aka Object )
-#### Files
-#### FIle Loaading Functions
-#### Error Handling Functions
-### Expressions and Operators
-### Statements & Declarations
+[String](#global-objects_string)
+[Math](#global-objects_math)
+[Table](#global-objects_table)
+[Coroutine](#global-objects_coroutine)
+[Operating System Facilities (OS)](#global-objects_os)
+### [Functions](#functions)
+[Independent](#functions_table)
+[Table Functions](#functions_table)
+[Files](#functions_table)
+[FIle Loaading Functions](#functions_table)
+[Error Handling Functions](#functions_table)
+### [Expressions & Operators](#expressions-and-operators)
+### [Statements & Declarations](#staatements-and-declarations)
 
 
 
@@ -20,24 +20,25 @@
 
 
 
-## [Global Objects](#global-objects)  
-[String](#global-objects__string)  
-[Math](#global-objects__math)  
-[Table](#global-objects__table)  
-[Coroutine](#global-objects__coroutine)  
-[Operating System Facilities (OS)](#global-objects__math)  
+# [Global Objects](#global-objects)  
+[String](#global-objects_string)  
+[Math](#global-objects_math)  
+[Table](#global-objects_table)  
+[Coroutine](#global-objects_coroutine)  
+[Operating System Facilities (OS)](#global-objects_math)  
 
 =======================
-## <a name="global-objects_table">String</a>  
+## <a name="global-objects_string">String</a>  
+Description
 
-## <a name="global-objects_table">Math</a>  
+## <a name="global-objects_math">Math</a>  
+Description
 
 ## <a name="global-objects_table">Table</a>
 Description
 
 ### Constructor
-`{}`  
-Creates a new `Table` object.
+`{}` Creates a new `Table` object.  
 
 <!-- 
     Provide short descriptoin
@@ -57,13 +58,13 @@ Creates a new `Table` object.
     Link to `Refferences, Table, {$method}
  -->
 ### Methods
-[`table.insert()`]
-[`table.remove()`]
-[`table.pack()`]
-[`table.unpack()`]
-[`table.concat()`]
-[`table.sort()`]
-[`table.move()`]
+[`table.insert()`]  
+[`table.remove()`]  
+[`table.pack()`]  
+[`table.unpack()`]  
+[`table.concat()`]  
+[`table.sort()`]  
+[`table.move()`]  
 
 ### Example
 This section provides examples of common table operations in Lua.
@@ -72,10 +73,10 @@ This section provides examples of common table operations in Lua.
 
 
 
-## <a name="global-objects_table">Coroutine</a>  
+## <a name="global-objects_coroutine">Coroutine</a>  
 Description
 
-## <a name="global-objects_table">Operating System Facilities (OS)</a>  
+## <a name="global-objects_os">Operating System Facilities (OS)</a>  
 Description
 
 ==========================================================================
