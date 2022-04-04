@@ -206,13 +206,13 @@ This section provides examples of common math operations in Lua.
 [`ipairs()`](#reference_functions_ipairs)  
 
 ### Methods
-[`Table.insert()`](#global-objects_table-method_insert)  
-[`Table.remove()`](#global-objects_table-method_remove)  
-[`Table.pack()`](#global-objects_table-method_pack)  
-[`Table.unpack()`](#global-objects_table-method_unpack)  
-[`Table.concat()`](#global-objects_table-method_concat)  
-[`Table.sort()`](#global-objects_table-method_sort)  
-[`Table.move()`](#global-objects_table-method_move)  
+[`table.insert()`](#global-objects_table-method_insert)  
+[`table.remove()`](#global-objects_table-method_remove)  
+[`table.pack()`](#global-objects_table-method_pack)  
+[`table.unpack()`](#global-objects_table-method_unpack)  
+[`table.concat()`](#global-objects_table-method_concat)  
+[`table.sort()`](#global-objects_table-method_sort)  
+[`table.move()`](#global-objects_table-method_move)  
 
 ### Example
 This section provides examples of common table operations in Lua.
@@ -245,7 +245,30 @@ This object does not contain specific functions.
 
 
 ## <a name="global-objects_os">Operating System Facilities (OS)</a>  
-Description
+`OS` (Operating System Facilities) is a built in object that helps accessing the operating system level functions.
+
+### Constructor
+
+### Functions
+This object does not contain specific functions.
+
+### Methods
+[`os.clock()`]
+[`os.date()`]
+[`os.difftime()`]
+[`os.execute()`]
+[`os.exit()`]
+[`os.getenv()`]
+[`os.remove()`]
+[`os.rename()`]
+[`os.setlocale()`]
+[`os.time()`]
+[`os.tmpname()`]
+
+
+### Example
+This section provides examples of common os operations in Lua.
+
 
 ==========================================================================
 
@@ -834,7 +857,7 @@ Sorts the values in a table.
 ===========================================================================
 
 
-## <a name="table-insert">Table.insert()</a>
+## <a name="table-insert">table.insert()</a>
 The `table.insert()` method adds one element to the end of the table.
 
 ### Syntax
@@ -869,7 +892,7 @@ table.insert(groceries, "Potatoes")
 
 
 
-# <a name="table-remove">Table.remove()</a>
+# <a name="table-remove">table.remove()</a>
 The `table.remove()` method removes one element from the table and shifts it.
 
 
@@ -900,7 +923,7 @@ table.remove(groceries, 2)
 
 
 
-## <a name="table-concat">Table.concat()</a>
+## <a name="table-concat">table.concat()</a>
 The `table.concat()` function is used to concatinate table values into a string.
 
 ### Syntax
@@ -954,7 +977,7 @@ print(table.concat(tbl, "-"))
 
 
 
-## <a name="table-pack">Table.pack()</a>
+## <a name="table-pack">table.pack()</a>
 The `table.pack()` method is used to combine values into a newly created table.
 
 ### Syntax
@@ -1002,7 +1025,7 @@ print(darkChocolateTable[3][2])
 
 
 
-## <a name="table-unpack">Table.unpack()</a>
+## <a name="table-unpack">table.unpack()</a>
 
 The `table.unpack()` returns all values from a table.
 
@@ -1057,7 +1080,7 @@ print(table.unpack(groceries))
 
 
 
-## <a name="table-sort">Table.sort()</a>
+## <a name="table-sort">table.sort()</a>
 
 The `table.sort()` sorts a table and returns its value sorted. If no value is provited, the sort function will default to alphabetical sorting.
 
