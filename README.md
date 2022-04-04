@@ -1,25 +1,38 @@
-<!-- ## Reference -->
-
-<!-- # Table of contents
-### [Global Objects](#global-objects)  
-[String](#global-objects_string)  
-[Math](#global-objects_math)  
-[Table](#global-objects_table)  
-[Coroutine](#global-objects_coroutine)  
-[Operating System Facilities (OS)](#global-objects_os)  
-### [Functions](#functions)  
-[Independent](#functions_table)  
-[Table Functions](#functions_table)  
-[Files](#functions_table)  
-[FIle Loaading Functions](#functions_table)  
-[Error Handling Functions](#functions_table)  
-### [Expressions & Operators](#expressions-and-operators)  
-### [Statements & Declarations](#staatements-and-declarations)  
-
- -->
-
-
+ 
+C API
+Auxiliary Library
+Metamethods
+Enviroment Variables
 # Table of contents
+
+- **[Lua Functions](#lua_functions)**
+  - **[Functions](#functions)**  
+      - [Independent](#functions_table)  
+      - [Table Functions](#functions_table)  
+      - [Files](#functions_table)  
+      - [Error Handling](#functions_table) 
+  - **[Global Objects](#global-objects)**  
+      - [String](#global-objects_string)  
+      - [Math](#global-objects_math)  
+      - [Table](#global-objects_table)  
+      - [Coroutine](#global-objects_coroutine)  
+      - [Operating System Facilities (OS)](#global-objects_os)  
+      - [Input and Output Facilities (IO)](#global-objects_io)  
+      - [UTF-8](#global-objects_utf-8)
+      - [Debug](#global-objects_debug)
+      - [Modules](#global-objects_modules)
+  - **[Expressions & Operators](#expressions-and-operators)**  
+  - **[Statements & Declarations](#staatements-and-declarations)**  
+- **C API**
+- **Auxiliary Library**
+- **Metamethods**
+- **Enviroment Variables**
+
+<!-- - **[Functions](#functions)**  
+    - [Independent](#functions_table)  
+    - [Table Functions](#functions_table)  
+    - [Files](#functions_table)  
+    - [Error Handling](#functions_table) 
 - **[Global Objects](#global-objects)**  
     - [String](#global-objects_string)  
     - [Math](#global-objects_math)  
@@ -30,13 +43,9 @@
     - [UTF-8](#global-objects_utf-8)
     - [Debug](#global-objects_debug)
     - [Modules](#global-objects_modules)
-- **[Functions](#functions)**  
-    - [Independent](#functions_table)  
-    - [Table Functions](#functions_table)  
-    - [Files](#functions_table)  
-    - [Error Handling](#functions_table)  
 - **[Expressions & Operators](#expressions-and-operators)**  
-- **[Statements & Declarations](#staatements-and-declarations)**  
+- **[Statements & Declarations](#staatements-and-declarations)**   -->
+
 
 
 
@@ -472,16 +481,6 @@ This section provides examples of common os operations in Lua.
 
 
 
-IO
-
-
-[`io.close()`](#global-objects_os-method_close)  
-[`io.flush()`](#global-objects_os-method_flush)  
-[`io.lines()`](#global-objects_os-method_lines)  
-
-
-
-
 
 
 
@@ -621,36 +620,6 @@ Join Lua Community server on discord! https://discord.gg/nNu6FeHC
 
 
 
-
-==========================================================================
-
- <!-- Guide
-Refference -->
-
-# Lua guide
-## Reference
-
-
-
-
-===========================================================================
-
-# Reference
-## Built in Objects
-### Tables
-### Coroutine
-### String
-### Math
-### Operating System Facilities (OS)
-## Functions
-### Independent
-### Table Functions (like Array Methods e.g Array.map(), but just pure functions pair() used only with 'Table' aka Object )
-### Files
-### FIle Loaading Functions
-### Error Handling Functions
-## Expressions and Operators
-## Statements & Declarations
- 
  
  
 
@@ -674,10 +643,7 @@ Refference -->
 
 -- > -->
 
-
-===========================================================================
-
-
+ 
 # <a name="doc_statements_and_declarations">Statements & declarations<a>
 
 ## Declaration
@@ -727,40 +693,7 @@ Refference -->
 
 
 
-
-===========================================================================
-
-# <a name="doc_functions">Functions</a>
-
-## <a name="doc_functions_independent">Indepenndent</a>
-`print()`  
-`select()`  
-`tonumber()`  
-`tostring()`  
-`type()`  
-`collectgarbage()`  
-`rawequal()`  
-`rawlen()`  
-## <a name="doc_table_functions">Table Functions</a>
-See table functions to view the functions
-## <a name="doc_functions_files">Files</a>
-`load()`  
-`loadfile()`  
-`dofile()` 
-## <a name="doc_functions_error_handling">Error Handling</a>
-`assert()`  
-`warn()`  
-`error()`  
-`pcall()`  
-`xpcall()`  
-
-
-
-
-===========================================================================
-
-
-
+  
 
 # <a name="doc_operators">Operators</a>
 
@@ -950,87 +883,9 @@ Relational Operators always resolve in `true` or `false`.
 
 
 
-
-
-===========================================================================
-
-
-# <a name="doc_string">String</a>
-
-## Methods
-
-`String.byte()`  
-`String.char()`  
-`String.dump()`  
-`String.find()`  
-`String.format()`  
-`String.gmatch()`  
-`String.gsub()`  
-`String.len()`  
-`String.lower()`  
-`String.match()`  
-`String.pack()`  
-`String.packsize()`  
-`String.rep()`  
-`String.reverse()`  
-`String.sub()`  
-`String.unpack()`  
-`String.upper()`  
-
-
-===========================================================================
-
-
-# <a name="doc_math">Math</a>
-
-## Methods
-`math.modf()`  
-`math.floor()`  
-`math.max()`  
-`math.celi()`  
-
-
-
-# <a name="doc_modules">Modules</a>
-
-## Methods
-`require()`
-`package.config`
-`package.cpath`
-`package.loaded`
-`package.loadlib()`
-`package.path`
-`package.preload`
-`package.searches`
-
-
-===========================================================================
-
-# <a name="refference_functions">Functions</a>
-`next()`  
-`getmetatable()`  
-`setmetatable()`  
-`rawset()`  
-`rawget()`  
-`rawlen()`  
-`rawequal()`  
-`pairs()`  
-`ipairs()`  
-`assert()`  
-`warn()`  
-`error()`  
-`pcall()`  
-`xpcall()`  
-`print()`  
-`select()`  
-`tonumber()`  
-`tostring()`  
-`type()`  
-`load()`  
-`loadfile()`  
-`dofile()`  
-`collectgarbage()`  
-
+ 
+ 
+ 
 
 
 
@@ -1088,57 +943,7 @@ Note: Printing a table will return table's hash such as `table: 0x5566951939f0`
 
 To get a table values you need to loop over them. Check out `pairs` and `ipairs.
 
-
-### Constructor 
-`{}` Creates a new `table`.
-
-
-### Table Functions
-<!-- 
-  link to functions to the functions side?
- Dont write the explanation/examples under 'table' but under 'functions'? 
--->
-[`next()`](#refference_function_next)  
-
-
-[`getmetatable()`](#refference_function_getmetatable)  
-
-[`setmetatable()`](#refference_function_setmetatable)  
-
-[`rawset()`](#refference_function_rawset)  
-
-[`rawget()`](#refference_function_rawget)  
-
-[`pairs()`](#refference_function_pairs)  
-
-[`ipairs()`](#refference_function_ipairs)  
-
-
-### Methods
-
-[`table.insert()`](#object_table_insert)  
-Adds one element to the table.
-
-[`table.remove()`](#object_table_remove)  
-Removes one element from the table.
-
-[`table.pack()`](#object_table_pack)  
-Packs elements into a new table.
-
-[`table.unpack()`](#object_table_unpack)  
-Unpacks a table into values.
-
-[`table.concat()`](#object_table_concat)  
-Returns a combined string from a table.
-
-[`table.sort()`](#object_table_sort)  
-Sorts the values in a table.
-
-[`table.move()`](#object_table_move)
-
-
-===========================================================================
-
+====
 
 ## <a name="table-insert">table.insert()</a>
 The `table.insert()` method adds one element to the end of the table.
