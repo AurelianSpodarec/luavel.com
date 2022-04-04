@@ -20,32 +20,32 @@
 
 
 # Table of contents
-**[Global Objects](#global-objects)**  
-&nbsp;&nbsp;[String](#global-objects_string)  
-&nbsp;&nbsp;[Math](#global-objects_math)  
-&nbsp;&nbsp;[Table](#global-objects_table)  
-&nbsp;&nbsp;[Coroutine](#global-objects_coroutine)  
-&nbsp;&nbsp;[Operating System Facilities (OS)](#global-objects_os)  
-**[Functions](#functions)**  
-&nbsp;&nbsp;[Independent](#functions_table)  
-&nbsp;&nbsp;[Table Functions](#functions_table)  
-&nbsp;&nbsp;[Files](#functions_table)  
-&nbsp;&nbsp;[FIle Loaading Functions](#functions_table)  
-&nbsp;&nbsp;[Error Handling Functions](#functions_table)  
-**[Expressions & Operators](#expressions-and-operators)**  
-**[Statements & Declarations](#staatements-and-declarations)**  
+- **[Global Objects](#global-objects)**  
+    - [String](#global-objects_string)  
+    - [Math](#global-objects_math)  
+    - [Table](#global-objects_table)  
+    - [Coroutine](#global-objects_coroutine)  
+    - [Operating System Facilities (OS)](#global-objects_os)  
+- **[Functions](#functions)**  
+    - [Independent](#functions_table)  
+    - [Table Functions](#functions_table)  
+    - [Files](#functions_table)  
+    - [FIle Loaading Functions](#functions_table)  
+    - [Error Handling Functions](#functions_table)  
+- **[Expressions & Operators](#expressions-and-operators)**  
+- **[Statements & Declarations](#staatements-and-declarations)**  
 
 
 
 ==========================================================================
 
 
-[Global Objects](#global-objects)  
-  [String](#global-objects_string)  
-  [Math](#global-objects_math)  
-  [Table](#global-objects_table)  
-  [Coroutine](#global-objects_coroutine)  
-  [Operating System Facilities (OS)](#global-objects_math)  
+# [Global Objects](#global-objects)  
+&nbsp;&nbsp;[String](#global-objects_string)  
+&nbsp;&nbsp;[Math](#global-objects_math)  
+&nbsp;&nbsp;[Table](#global-objects_table)  
+&nbsp;&nbsp;[Coroutine](#global-objects_coroutine)  
+&nbsp;&nbsp;[Operating System Facilities (OS)](#global-objects_math)  
 
 =======================
 
