@@ -33,23 +33,22 @@
 The `String` object is used to represent and manipulate a sequence of characters.
 
 ### Escape Sequences
-### Escape sequences
-
 Special characters can be encoded using escape sequences:
 
-| Escape Sequence | Use                   |
-| --------------- | --------------------- |
-| \b              | Backspace             |
-| \f              | Formfeed              |
-| \n              | New line              |
-| \r              | Carriage return       |
-| \t              | Tab                   |
-| \v              | Vertical tab          |
-| \\              | Backslash             |
-| \"              | Double quotes         |
-| \'              | Single quotes         |
-| \[              | Left square bracket   |
-| \]              | Right square bracket  |
+| Escape sequence                                                                                                                                        | Use                                                                                                      |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| ---------------   | --------------------- |
+| `\b`              | Backspace             |
+| `\f`              | Formfeed              |
+| `\n`              | New line              |
+| `\r`              | Carriage return       |
+| `\t`              | Tab                   |
+| `\v`              | Vertical tab          |
+| `\\`              | Backslash             |
+| `\"`              | Double quotes         |
+| `\'`              | Single quotes         |
+| `\[`              | Left square bracket   |
+| `\]`              | Right square bracket  |
 
 
 
