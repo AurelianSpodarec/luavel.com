@@ -2,9 +2,6 @@
   "name": "classic",
   "version": "0.0.0",
   "private": true,
-  "engines": {
-    "node": "14.x"
-  },
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
