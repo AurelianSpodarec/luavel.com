@@ -20,27 +20,21 @@ title: Table
 [`ipairs()`](#reference_functions_ipairs)  
 
 
-## Methods
+## Instance Methods
 [`table.insert()`](#global-objects_table-method_insert)  
     Adds one element to the table.  
-
 [`table.remove()`](#global-objects_table-method_remove)  
-Removes one element from the table.  
-
+    Removes one element from the table.  
 [`table.pack()`](#global-objects_table-method_pack)  
-Packs elements into a new table.  
-
+    Packs elements into a new table.  
 [`table.unpack()`](#global-objects_table-method_unpack)  
-Unpacks a table into values.  
-
+    Unpacks a table into values.  
 [`table.concat()`](#global-objects_table-method_concat)  
-Returns a combined string from a table.  
-
+    Returns a combined string from a table.  
 [`table.sort()`](#global-objects_table-method_sort)  
-Sorts the values in a table.  
-
+    Sorts the values in a table.  
 [`table.move()`](#global-objects_table-method_move)  
-Moves elements from one table to another table and returns it.
+    Moves elements from one table to another table and returns it.
  
 
 ## Examples
