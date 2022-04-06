@@ -22,8 +22,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/AurelianSpodarec/lua-documentation/tree/main/packages/create-lua-documentation/templates/shared/',
         },
@@ -39,17 +39,18 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Lua Docs',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
+            label: 'Guides',
+            to: '/',
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
           },
           {
             href: 'https://github.com/AurelianSpodarec/lua-documentation',
@@ -58,6 +59,7 @@ const config = {
           },
         ],
       },
+
       footer: {
         style: 'dark',
         links: [
@@ -66,7 +68,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/',
+                to: '/'
               },
             ],
           },
