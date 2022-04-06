@@ -51,7 +51,6 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/AurelianSpodarec/lua-documentation',
             label: 'GitHub',
@@ -67,7 +66,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/',
               },
             ],
           },
@@ -87,20 +86,7 @@ const config = {
                 href: 'https://twitter.com/lua-documentation',
               },
             ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/AurelianSpodarec/lua-documentation',
-              },
-            ],
-          },
+          }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
