@@ -1,5 +1,4 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
@@ -13,8 +12,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'AurelianSpodarec', // Usually your GitHub org/user name.
-  projectName: 'lua-documentation', // Usually your repo name.
+  organizationName: 'AurelianSpodarec',
+  projectName: 'lua-documentation',
 
   presets: [
     [
@@ -24,8 +23,7 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/AurelianSpodarec/lua-documentation/tree/main/packages/create-lua-documentation/templates/shared/',
+          editUrl: 'https://github.com/AurelianSpodarec/lua-documentation',
         },
         blog: false,
         theme: {
@@ -42,9 +40,16 @@ const config = {
         title: 'Lua Docs',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
+          {
+            label: 'References',
+            to: '/',
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
+          },
           {
             label: 'Guides',
             to: '/',
@@ -55,6 +60,11 @@ const config = {
           {
             href: 'https://github.com/AurelianSpodarec/lua-documentation',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/AurelianSpodarec/lua-documentation',
+            label: 'Discord',
             position: 'right',
           },
         ],
@@ -95,7 +105,8 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-      },
+        additionalLanguages: ['lua']
+      }
     }),
 };
 
