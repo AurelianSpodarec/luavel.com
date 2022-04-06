@@ -37,3 +37,30 @@
 [data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+
+/* TODO: Refactor - quick styling */
+
+a {
+  color: #00ceef;
+}
+
+.menu__link--active {
+  color: #00ceef;
+}
+
+.navbar__link:hover, .navbar__link--active {
+  color: #00ceef;
+}
+
+.table-of-contents__link:hover, .table-of-contents__link:hover code, .table-of-contents__link--active, .table-of-contents__link--active code {
+  color: #00ceef;
+}
+
+body,
+html {
+  background-color: #060322;
+}
+
+
+/* background: #060322 */

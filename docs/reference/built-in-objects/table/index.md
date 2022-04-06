@@ -7,10 +7,11 @@ title: Table
 ## Description
 
 ## Constructor
+
 `{}` Creates a new `table` object.  
 
-
 ## Functions
+
 [`next()`](#reference_functions_next)  
 [`getmetatable()`](#reference_functions_getmetatable)  
 [`setmetatable()`](#reference_functions_setmetatable)  
@@ -19,8 +20,8 @@ title: Table
 [`pairs()`](#reference_functions_pairs)  
 [`ipairs()`](#reference_functions_ipairs)  
 
-
 ## Instance Methods
+
 [`table.insert()`](#global-objects_table-method_insert)  
     Adds one element to the table.  
 [`table.remove()`](#global-objects_table-method_remove)  
@@ -36,13 +37,13 @@ title: Table
 [`table.move()`](#global-objects_table-method_move)  
     Moves elements from one table to another table and returns it.
  
-
 ## Examples
 This section provides examples of common table operations in Lua.
 
 ### Create a table
 
 ### Access an table item by its index
+
 ```lua
 local groceries = {
     {
@@ -69,6 +70,7 @@ print(groceries[3].name)
 ```
 
 ### Display values of a table
+
 ```lua
 local groceries = {
     {
@@ -113,6 +115,7 @@ end
 
 
 ### Reasemblance of a Class
+
 ```lua
 local Class = {}
 
