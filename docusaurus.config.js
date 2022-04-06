@@ -9,7 +9,7 @@ const config = {
   title: 'Lua Documentation',
   tagline: 'Lua Docs',
   url: 'https://luavel.com',
-  baseUrl: '/',
+  baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
