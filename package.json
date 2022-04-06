@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "engines": {
-    "npm": "~8.1.0"
+    "npm": "~8.1.0",
+    "node": "~16.14.2"
   },
   "scripts": {
     "docusaurus": "docusaurus",
