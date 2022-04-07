@@ -38,6 +38,7 @@ const config = {
     ({
       navbar: {
         title: 'Lua Docs',
+        hideOnScroll: true,
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.png',

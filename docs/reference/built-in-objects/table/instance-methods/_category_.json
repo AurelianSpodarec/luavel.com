@@ -2,5 +2,6 @@
     "label": "instance-methods",
     "position": 2,
     "collapsible": true,
-    "collapsed": true
+    "collapsed": true,
+    "className": "lua-submenu--hide"
 }

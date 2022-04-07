@@ -2,5 +2,6 @@
     "label": "Table",
     "position": 2,
     "collapsible": true,
-    "collapsed": true
+    "collapsed": true,
+    "className": "lua-parent--hide-button"
 }

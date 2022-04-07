@@ -64,3 +64,16 @@ html {
 
 
 /* background: #060322 */
+
+
+.always-hidden {
+  display: none;
+}
+
+.lua-submenu--hide {
+  display: none;
+}
+
+.lua-parent--hide-button button{
+  display: none;
+}

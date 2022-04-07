@@ -131,3 +131,37 @@ print(Class.makeSound("Woof!"))
 
 -- Output: Woof
 ```
+
+
+<!-- NOTES FROM OTHER PEOPLE WANTING TO DO X
+
+
+
+
+
+
+
+
+oh ok, so if i had
+Table = {
+A,
+B,
+C
+}
+
+and i used Table [2] = nil
+
+Table[2] would now be C?
+or would Table[2] still exist, but just be nil
+
+if i wanted to remove the last entry of a table, how would I do it?
+
+table.remove(Table,#Table)?
+stOne🪨 — 24/02/2022
+table.remove moves everything after the index you deleted one index down so it can be a little slow, if you want to remove the last index do tableName[#tableName] its much faster
+
+
+how do you spawn an object with the hash of it
+
+
+ -->
