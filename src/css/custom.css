@@ -39,7 +39,24 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* TODO: Refactor - quick styling */
+/* body,
+html {
+  background-color: ##21222c;
+} */
+
+
 
 a {
   color: #00ceef;
@@ -57,10 +74,6 @@ a {
   color: #00ceef;
 }
 
-body,
-html {
-  background-color: #060322;
-}
 
 
 /* background: #060322 */
@@ -76,4 +89,58 @@ html {
 
 .lua-parent--hide-button button{
   display: none;
+}
+
+
+
+.table-of-contents__left-border {
+  border-left: 1px solid var(--ifm-toc-border-color);
+}
+
+.table-of-contents {
+  border-left-width: 3px;
+  font-size: 15px;
+  font-weight: var(--ifm-font-weight-semibold);
+}
+
+
+.table-of-contents__link--active, .table-of-contents__link--active code, .table-of-contents__link:hover, .table-of-contents__link:hover code {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+
+
+.table-of-contents li  {
+  position: relative;
+}
+
+
+
+.table-of-contents__link--active, .table-of-contents__link--active code, .table-of-contents__link:hover, .table-of-contents__link:hover code {
+  color: #00ceef;
+}
+
+.table-of-contents, .table-of-contents ul{
+  list-style-type: none;
+  padding-left: var(--ifm-toc-padding-horizontal);
+}
+
+
+
+
+
+/* Border Styling on the left TOC */
+.table-of-contents__link--active:before {
+  background: #00ceef;
+  bottom: 0;
+  content: " ";
+  left: -20px;
+  position: absolute;
+  top: 0;
+  width: 3px;
+}
+
+ul ul .table-of-contents__link--active:before {
+  left: -35px;
 }

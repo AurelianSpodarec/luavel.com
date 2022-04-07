@@ -13,29 +13,48 @@ title: Table
 ## Functions
 
 [`next()`](#reference_functions_next)  
+&nbsp;&nbsp;&nbsp; 
+
 [`getmetatable()`](#reference_functions_getmetatable)  
+&nbsp;&nbsp;&nbsp; 
+
 [`setmetatable()`](#reference_functions_setmetatable)  
+&nbsp;&nbsp;&nbsp; 
+
 [`rawset()`](#reference_functions_rawset)  
+&nbsp;&nbsp;&nbsp; 
+
 [`rawget()`](#reference_functions_rawget)  
+&nbsp;&nbsp;&nbsp; 
+
 [`pairs()`](#reference_functions_pairs)  
+&nbsp;&nbsp;&nbsp; 
+
 [`ipairs()`](#reference_functions_ipairs)  
+
 
 ## Instance Methods
 
-[`table.insert()`](#global-objects_table-method_insert)  
-    Adds one element to the table.  
-[`table.remove()`](#global-objects_table-method_remove)  
-    Removes one element from the table.  
-[`table.pack()`](#global-objects_table-method_pack)  
-    Packs elements into a new table.  
-[`table.unpack()`](#global-objects_table-method_unpack)  
-    Unpacks a table into values.  
-[`table.concat()`](#global-objects_table-method_concat)  
-    Returns a combined string from a table.  
-[`table.sort()`](#global-objects_table-method_sort)  
-    Sorts the values in a table.  
-[`table.move()`](#global-objects_table-method_move)  
-    Moves elements from one table to another table and returns it.
+[`table.insert()`](/reference/global-objects/table/insert)  
+&nbsp;&nbsp;&nbsp; Adds one element to the table.  
+    
+[`table.remove()`](/reference/global-objects/table/remove)    
+&nbsp;&nbsp;&nbsp; Removes one element from the table.  
+
+[`table.pack()`](/reference/global-objects/table/pack)    
+&nbsp;&nbsp;&nbsp; Packs elements into a new table.  
+
+[`table.unpack()`](/reference/global-objects/table/unpack)    
+&nbsp;&nbsp;&nbsp; Unpacks a table into values.  
+
+[`table.concat()`](/reference/global-objects/table/concat)    
+&nbsp;&nbsp;&nbsp; Returns a combined string from a table.  
+
+[`table.sort()`](/reference/global-objects/table/sort)    
+&nbsp;&nbsp;&nbsp; Sorts the values in a table.  
+
+[`table.move()`](/reference/global-objects/table/move)    
+&nbsp;&nbsp;&nbsp; Moves elements from one table to another table and returns it.
  
 ## Examples
 This section provides examples of common table operations in Lua.
