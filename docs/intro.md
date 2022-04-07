@@ -5,16 +5,22 @@ title: Introduction
 slug: /
 ---
 
-AgileTs
+:::note
+
+Work in progress
+
+:::
+
 ## 👋 Introduction
 
+## 🚅 foo bar.. WTF?!
 
-Introductoin
-Getting started
+Straightforward examples with language you can understand.
 
-Installation
+No more `foo`, `bar`, `t`, `h`, `a` to represent non descriptive things.
 
-Game Dev/Anatomy?
-- Minecraft
-- GTA
-- Other
+Consistent across the documentation. 
+
+No more will you get confused seeing one value being respresented in 10different names.
+
+This documentation uses clear langauge that benefits beginners and advanced in understanding the concepts and functions of Lua.

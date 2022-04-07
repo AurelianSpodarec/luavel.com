@@ -3,7 +3,7 @@
     slug: /reference/global-objects/table/remove
 ---
 
-The `table.remove()` method removes one element from the table. This method changes te length of the table.
+The `table.remove()` method removes one element from the table. This method changes the length of the table.
 
 ## Syntax
 ```lua
@@ -60,9 +60,11 @@ local groceries = { "Dog", "Cat", "Bird" }
 
 groceries[2] = nil 
 
+// highlight-start
 for index = 1, #groceries do
     print(groceries[index])
 end
+// highlight-end
 
 -- Expected Output: Bread Peas
 ```
