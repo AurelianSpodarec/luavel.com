@@ -64,7 +64,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/AurelianSpodarec/lua-documentation',
+            href: 'https://discord.gg/Jp2HFx3KTH',
             label: 'Discord',
             position: 'right',
           },
