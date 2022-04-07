@@ -24,7 +24,7 @@ table.remove(tbl, index)
 
 :::note
 
-The method does not remove the last item of the array if its an [associative array](/associative-array) 
+The method does not remove the last item of the array if its an [associative array]
 e.g `{ name = "Bob", name = "Joe"}`
 
 :::
