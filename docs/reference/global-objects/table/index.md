@@ -2,36 +2,44 @@
 title: Table
 ---
 
-`table` is a built in object 
+The `table` objecs, reffered as arrays in other programming languages, enables the storeage of different data.
+
 
 ## Description
 
+In Lua, `table` is the only way to represent stored data. 
+
+- You can use the table as an array, object and class
+- Tables are indexted starting from 1
+- You can create 2D arrays
+
 ## Constructor
 
-`{}` Creates a new `table` object.  
+`{}`  
+&nbsp;&nbsp;&nbsp; Creates a new `table` object.  
 
 ## Functions
 
-[`next()`](#reference_functions_next)  
-&nbsp;&nbsp;&nbsp; 
+[`next()`](/reference/functions/next)  
+&nbsp;&nbsp;&nbsp; Allows a program to traverse all fields of a table  
 
-[`getmetatable()`](#reference_functions_getmetatable)  
-&nbsp;&nbsp;&nbsp; 
+[`setmetatable()`](/reference/functions/setmetatable)  
+&nbsp;&nbsp;&nbsp; Sets the metatable for the table.  
 
-[`setmetatable()`](#reference_functions_setmetatable)  
-&nbsp;&nbsp;&nbsp; 
+[`getmetatable()`](/reference/functions/getmetatable)  
+&nbsp;&nbsp;&nbsp;  Returns metatable associated value or metatable.  
 
-[`rawset()`](#reference_functions_rawset)  
-&nbsp;&nbsp;&nbsp; 
+[`rawset()`](/reference/functions/rawset)  
+&nbsp;&nbsp;&nbsp; Sets value of `table[index]` and returns the table  
 
-[`rawget()`](#reference_functions_rawget)  
-&nbsp;&nbsp;&nbsp; 
+[`rawget()`](/reference/functions/rawget)  
+&nbsp;&nbsp;&nbsp; Returns value of `table[index]`  
 
-[`pairs()`](#reference_functions_pairs)  
-&nbsp;&nbsp;&nbsp; 
+[`pairs()`](/reference/functions/pairs)  
+&nbsp;&nbsp;&nbsp; Used to ilerate over table  
 
-[`ipairs()`](#reference_functions_ipairs)  
-
+[`ipairs()`](/reference/functions/ipairs)  
+&nbsp;&nbsp;&nbsp; Used to ilerate over tble  
 
 ## Instance Methods
 
@@ -61,7 +69,7 @@ This section provides examples of common table operations in Lua.
 
 ### Create a table
 
-### Access an table item by its index
+### Get table item by index
 
 ```lua
 local groceries = {
@@ -148,39 +156,5 @@ end
 
 print(Class.makeSound("Woof!"))
 
--- Output: Woof
+-- Expected Output: Woof
 ```
-
-
-<!-- NOTES FROM OTHER PEOPLE WANTING TO DO X
-
-
-
-
-
-
-
-
-oh ok, so if i had
-Table = {
-A,
-B,
-C
-}
-
-and i used Table [2] = nil
-
-Table[2] would now be C?
-or would Table[2] still exist, but just be nil
-
-if i wanted to remove the last entry of a table, how would I do it?
-
-table.remove(Table,#Table)?
-stOne🪨 — 24/02/2022
-table.remove moves everything after the index you deleted one index down so it can be a little slow, if you want to remove the last index do tableName[#tableName] its much faster
-
-
-how do you spawn an object with the hash of it
-
-
- -->
