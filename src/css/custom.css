@@ -59,19 +59,19 @@ html {
 
 
 a {
-  color: #00ceef;
+  color: orange;
 }
 
 .menu__link--active {
-  color: #00ceef;
+  color: orange;
 }
 
 .navbar__link:hover, .navbar__link--active {
-  color: #00ceef;
+  color: orange;
 }
 
 .table-of-contents__link:hover, .table-of-contents__link:hover code, .table-of-contents__link--active, .table-of-contents__link--active code {
-  color: #00ceef;
+  color: orange;
 }
 
 
@@ -118,7 +118,7 @@ a {
 
 
 .table-of-contents__link--active, .table-of-contents__link--active code, .table-of-contents__link:hover, .table-of-contents__link:hover code {
-  color: #00ceef;
+  color: orange;
 }
 
 .table-of-contents, .table-of-contents ul{
@@ -132,7 +132,7 @@ a {
 
 /* Border Styling on the left TOC */
 .table-of-contents__link--active:before {
-  background: #00ceef;
+  background: orange;
   bottom: 0;
   content: " ";
   left: -20px;
