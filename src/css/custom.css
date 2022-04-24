@@ -56,7 +56,9 @@ html {
   background-color: ##21222c;
 } */
 
-
+.navbar--fixed-top {
+  background: #131313!important;
+}
 
 a {
   color: orange;
