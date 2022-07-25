@@ -1,6 +1,8 @@
-# Contributing to the content of Lua Web Docs
+# Contributing to the content of Lua Web Docs - Work In Progress
 
 ## Making contributions 
+
+Feel free to pull in a request anytime. Just please be mindful of how the docs are written and follow the style.
 
 ## Contributions
 
